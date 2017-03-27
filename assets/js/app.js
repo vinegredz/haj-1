@@ -33,7 +33,7 @@
 
 $('.btn-skip').on('click', function () {
 
-    document.cookie = "visited";
+    document.cookie = "haj-visited";
 
     location.reload();
 
