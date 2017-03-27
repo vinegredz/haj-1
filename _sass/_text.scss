@@ -1,0 +1,67 @@
+// Links
+
+a {
+  transition: .25s;
+}
+
+// Sizes
+.f-xs {
+  font-size: $font-size-xs;
+}
+
+.f-sm {
+  font-size: $font-size-sm;
+}
+
+// Weights
+.f-light {
+  font-weight: 200;
+}
+
+.f-normal {
+  font-weight: $font-weight-base;
+}
+
+.f-med {
+  font-weight: 500;
+}
+
+.f-bold {
+  font-weight: 800;
+}
+
+.f-heavy {
+  font-weight: 900;
+}
+
+// Fonts
+.f-sans {
+  font-family: $font-family-sans-serif;
+}
+
+.f-serif {
+  font-family: $font-family-serif;
+}
+
+.f-cursive {
+  font-family: $font-family-cursive;
+}
+
+// Letter spacing
+.f-ls-plus {
+  letter-spacing: $letter-spacing-plus;
+}
+
+.f-ls-minus {
+  letter-spacing: $letter-spacing-minus;
+}
+
+// Colors
+
+.text-gray {
+  color: $gray;
+}
+
+.text-gray-light {
+  color: $gray-light;
+}

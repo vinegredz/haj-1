@@ -1,0 +1,39 @@
+<header>
+
+    <div class="container container-wide">
+
+        <div class="row">
+
+            <div class="col-4">
+
+                <a class="logo-link" href="{{ '/' | relative_url}}">
+                    <img class="d-inline mr-3" src="{{ 'assets/img/head.svg' | relative_url }}" width="32px">
+                    <span class="d-inline-block align-middle hidden-xs-down">{{site.title}}</span>
+                </a>
+
+            </div>
+
+            <div class="col-8">
+
+                <nav class="nav justify-content-end">
+
+                        {% assign navTitlesArray = (site.pages | where: 'isInNav', 'true' | sort: 'id' ) %}
+
+                        {% for page in navTitlesArray %}
+
+                        <a class="nav-link hidden-md-down" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+
+                        {% endfor %}
+
+                    <a class="nav-link btn btn-primary text-uppercase f-heavy f-ls-minus ml-3"
+                       href="{{ 'donate.html' | relative_url  }}">Donate</a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>

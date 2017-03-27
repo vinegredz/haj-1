@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{% include head.html %}
+
+{% capture location %}{{ page.url | split:'/' }}{% endcapture %}
+
+<body class="{% if location == '' %}homepage{% endif %}">
+
+<div class="spinner"></div>
+
+{% include header.html %}
+
+{{ content }}
+
+{% include footer.html %}
+
+</body>
+
+</html>

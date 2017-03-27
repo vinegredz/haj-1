@@ -1,0 +1,84 @@
+/* Homepage animation sequence */
+
+.homepage {
+
+  .jumbotron {
+    position: relative;
+    transform: scale(1.25);
+    will-change: transform;
+  }
+
+  .a-1, .a-2, .a-3 {
+    opacity: 0;
+    will-change: opacity;
+  }
+
+  header {
+    transform: translateY(-100%);
+    will-change: transform;
+  }
+
+  .wrapper-home {
+    margin-top: 0;
+    will-change: margin;
+  }
+
+  &.isLoadedFirst {
+
+    .jumbotron {
+      transform: scale(1);
+      transition: transform 15s;
+    }
+
+    .a-1 {
+      transition: opacity 1s 5s;
+      opacity: 1;
+    }
+
+    .a-2 {
+      transition: opacity 1s 7s;
+      opacity: 1;
+    }
+
+    .a-3 {
+      transition: opacity 1s 10s;
+      opacity: 1;
+    }
+
+    header {
+      transition: transform 1s 11s;
+      transform: translateY(0);
+    }
+
+    .wrapper-home {
+      transition: margin 1s 11s;
+      margin-top: -15vh;
+    }
+
+  }
+
+  &.isLoaded {
+
+    .jumbotron {
+      transform: scale(1);
+    }
+
+    .a-1, .a-2, .a-3 {
+      opacity: 1;
+      transition: opacity .5s .4s;
+    }
+
+    header {
+      transform: translateY(0);
+      transition: transform .3s .4s;
+    }
+
+    .wrapper-home {
+      margin-top: -15vh;
+      transition: margin .3s .4s;
+    }
+
+  }
+
+}
+
