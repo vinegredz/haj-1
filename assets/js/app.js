@@ -6,7 +6,7 @@
 
     body.style.overflow = 'hidden';
 
-    if (document.cookie.indexOf("visited") >= 1) {
+    if (document.cookie.indexOf("haj-visited") >= 0) {
 
         body.classList.add('isLoaded');
         spinner.classList.add('hideSpinner');
@@ -24,7 +24,7 @@
 
         };
 
-        document.cookie = "visited";
+        document.cookie = "haj-visited";
 
     }
 
