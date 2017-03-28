@@ -1,6 +1,19 @@
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $gray-lightest;
+}
+
+body:not(.homepage) > .wrapper {
+  padding-top: 100px;
+  flex: 1;
 }
 
 .container-wide {
@@ -15,7 +28,9 @@ header {
   left: 0;
   width: 100%;
   //background-color: rgba(0, 0, 0, 0.8);
-  background-color: rgba(255, 255, 255, 0.97);
+  //background-color: rgba(255, 255, 255, 0.97);
+  background-color: $white;
+  box-shadow: $dropdown-box-shadow;
 
   .nav-link {
     padding: 1.1rem .75rem;
@@ -30,31 +45,26 @@ header {
       font-weight: 900;
       padding-left: 1.7rem;
       padding-right: 1.7rem;
-      font-size: 1.1rem
+      font-size: 1.1rem;
+      border-radius: 0;
     }
 
-  }
-
-  .logo-link {
-    display: block;
-    white-space: nowrap;
-    font-family: $font-family-cursive;
-    color: $gray;
-    font-size: 2rem;
-
-    &:hover {
-      text-decoration: none;
+    &.nav-link-current {
+      background-color: $gray-lighter;
+      color: $black;
     }
 
   }
 
 }
 
+// It's for body.homepage only
 .jumbotron {
   background-image: url('../assets/img/bg2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $black;
   margin: 0;
   min-height: 100vh;
   position: relative;
@@ -65,21 +75,28 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(0, 0, 0, .6);
+    will-change: background-color;
   }
 
 }
 
+// It's for body.homepage only
 .wrapper-home {
   position: relative;
-  overflow: hidden;
-  background-color: $white;
+  background-color: $gray-lightest;
+  @include angle(before, $flip: true);
 }
 
 .footer-main {
-  position: relative;
-  overflow: hidden;
-  background-color: $black;
+  background-color: darken($blue, 27%);
+  margin-top: 5rem;
   color: $white;
+  @include angle(before, $flip: false);
+
+  input, textarea {
+    background-color: darken($blue, 25%);
+  }
+
 }
 

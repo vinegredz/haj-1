@@ -31,15 +31,48 @@
 })();
 
 
-$('.btn-skip').on('click', function () {
+// Skip onload animation
+/*$('.btn-skip').on('click', function (e) {
+ e.preventDefault();
+ document.cookie = "haj-visited";
 
-    document.cookie = "haj-visited";
+ location.reload();
 
-    location.reload();
+ });*/
 
 
-});
+// Subscribe card
+(function () {
 
+    var cardSubs = $('#card-subscription'),
+        footer = $(".footer-main"),
+        cardSubsClose = cardSubs.find('.card-subscribe-close');
+
+    $(window).scroll(function () {
+
+        var footerHeight = footer.height(),
+            docHeight = $(document).height(),
+            delta = docHeight - footerHeight,
+            userPos = $(window).scrollTop(),
+            checkPoint = (delta - (userPos + 150));
+
+        console.log(delta);
+        console.log(userPos + 150);
+
+        if (checkPoint < 160) {
+            cardSubs.addClass('isShown');
+        } else {
+            cardSubs.removeClass('isShown');
+        }
+
+    });
+
+    cardSubsClose.click(function () {
+        cardSubs.addClass('isRemoved');
+    })
+
+
+})();
 
 
 

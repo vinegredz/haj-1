@@ -5,39 +5,81 @@ layout: default
 
 {% include jumbotron.html %}
 
-<div class="wrapper-home">
+<div class="wrapper-home edge-oblique">
 
     <div class="container">
 
-        <blockquote class="blockquote">
-            <p class="mb-0">Through you every family on earth will be blessed.</p>
-            <footer class="blockquote-footer"><cite title="Source Title">Genesis,</cite>12:3</footer>
-        </blockquote>
+        <div class="card card-oblique card-shift-top px-md-5 px-2 py-2 text-center">
+            <img class="img-quote" src="{{ 'assets/img/tora.svg' | relative_url }}">
+            <p class="lead text-primary pb-2 pt-3">“Through you every family on earth will be blessed.”</p>
+            <div class="f-xs f-sans">Genesis, 12:3</div>
+        </div>
 
-        <h1>Too many Jews are denied their right to return to Israel</h1>
-        <h2>We help Jews fight for their legal rights to make Aliya and return to the Holy Land of Israel</h2>
-        ​
-        <p>When an American Jew wishes to return home to Israel, a rabbinical letter is enough to get the immigration
-            visa. However, in the Former Soviet Union (FSU), endless lists of documents and paperwork can make Aliya
-            impossible. FSU Jews are treated unjustly, humiliated, and blocked from immigration by the same government
-            that guarantees their right to it.</p>
+        <div class="row py-5">
 
-        <p>Help a Jew - Help the Holy Land is a group of dedicated legal professionals who want to help those who have
-            been denied their right to return to the Holy Land.</p>
+            <div class="col-lg-6 offset-lg-1">
 
-        <p>We seek to help individual Jews fight for their God-given and legal rights to settle in Israel.</p>
+                <h1>Too many Jews are denied their right to return to Israel</h1>
+                <p class="lead text-gray">We help Jews fight for their legal rights to make Aliya and return to the
+                    Holy Land of Israel</p>
+                <p>When an American Jew wishes to return home to Israel, a rabbinical letter is enough to get the
+                    immigration visa. However, in the Former Soviet Union (FSU), endless lists of documents and paperwork can make
+                    Aliya
+                    impossible. <span class="font-italic">FSU Jews are treated unjustly, humiliated, and blocked from immigration by the same government
+            that guarantees their right to it.</span></p>
+                <p>Help a Jew - Help the Holy Land is a group of dedicated legal professionals who want to help those
+                    who have been denied their right to return to the Holy Land.</p>
+                <p class="font-italic">We seek to help individual Jews fight for their God-given and legal rights to
+                    settle in
+                    Israel.</p>
+                <p>The time of their homecoming is now, and you can be a part of the ingathering.</p>
+                <a class="btn btn-outline-primary my-5" href="{{ 'how-we-help' | relative_url }}">Learn more about our
+                    work</a>
 
-        <p>The time of their homecoming is now, and you can be a part of the ingathering.</p>
+            </div>
 
+            <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
 
-        <blockquote class="blockquote">
-            <p class="mb-0">“The land of Israel is the land of our shared heritage. Israel is the one place in the
+                <div class="card card-white">
+                    <img class="card-img-top"
+                         src="{{ site.posts.last.image | default: site.image-placeholder-2 | relative_url }}"
+                         alt="Image">
+                    <div class="card-block">
+                        <p class="text-uppercase f-sans f-bold f-sm">New Post</p>
+                        <h4 class="pt-3"><a href="{{ site.posts.last.url | relative_url }}">
+                            {{site.posts.last.title}}</a></h4>
+                        <p class="text-gray-light">{{site.posts.last.excerpt | remove: '
+                        <p>' | remove: '</p>' | truncatewords:15 }}</p>
+                        <p><a href="{{ 'blog.html' | relative_url }}"
+                              class="text-gray-light f-sans f-sm">See more posts in our exciting blog</a></p>
+
+                    </div>
+                </div>
+
+                <div class="card card-white mt-4">
+                    <div class="card-block">
+                        <p class="text-uppercase f-sans f-bold f-sm">New Tip</p>
+                        <h4 class="pt-3"><a href="{{ site.posts.first.url | relative_url }}">
+                            {{site.posts.first.title}}</a></h4>
+                        <p class="text-gray-light">{{site.posts.last.excerpt | remove: '
+                        <p>' | remove: '</p>' | truncatewords:15 }}</p>
+                        <p><a href="{{ 'guide.html' | relative_url }}"
+                              class="text-gray-light f-sans f-sm">See more tips in our helpful guid</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card card-oblique card-oblique-reverse px-md-5 px-2 py-2 mt-5 text-center">
+            <img class="img-quote" src="{{ 'assets/img/magen.svg' | relative_url }}">
+            <p class="lead text-primary pb-2 pt-3">“The land of Israel is the land of our shared heritage. Israel is the
+                one place in the
                 Middle East where the Christian community not only survives but thrives and it is no accident.”</p>
-            <footer class="blockquote-footer"><cite title="Source Title">Israeli Prime Minister Benjamin
-                Netanyahu,</cite> Dec. 21st 2016
-            </footer>
-        </blockquote>
-
+            <div class="f-xs f-sans">Israeli Prime Minister Benjamin Netanyahu, Dec. 21st 2016
+            </div>
+        </div>
 
     </div>
 

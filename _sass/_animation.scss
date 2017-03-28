@@ -8,26 +8,35 @@
     will-change: transform;
   }
 
+  .jumbotron .jumbotron-overlay {
+    will-change: background-color;
+  }
+
   .a-1, .a-2, .a-3 {
     opacity: 0;
     will-change: opacity;
   }
 
   header {
-    transform: translateY(-100%);
+    transform: translate3d(0, -100%, 0);
     will-change: transform;
   }
 
   .wrapper-home {
-    margin-top: 0;
-    will-change: margin;
+    transform: translate3d(0, 15vh, 0);
+    will-change: transform;
   }
 
   &.isLoadedFirst {
 
     .jumbotron {
       transform: scale(1);
-      transition: transform 15s;
+      transition: transform 12s;
+    }
+
+    .jumbotron .jumbotron-overlay {
+      background-color: rgba(0, 0, 0, .75);
+      transition: background-color 10s;
     }
 
     .a-1 {
@@ -46,13 +55,13 @@
     }
 
     header {
-      transition: transform 1s 11s;
-      transform: translateY(0);
+      transition: transform .3s 12s;
+      transform: translate3d(0, 0, 0);
     }
 
     .wrapper-home {
-      transition: margin 1s 11s;
-      margin-top: -15vh;
+      transition: transform .3s 12s;
+      transform: translate3d(0, -10vh, 0);
     }
 
   }
@@ -63,19 +72,23 @@
       transform: scale(1);
     }
 
+    .jumbotron .jumbotron-overlay {
+      background-color: rgba(0, 0, 0, .75);
+    }
+
     .a-1, .a-2, .a-3 {
       opacity: 1;
       transition: opacity .5s .4s;
     }
 
     header {
-      transform: translateY(0);
-      transition: transform .3s .4s;
+      transform: translate3d(0, 0, 0);
+      transition: transform .4s .2s;
     }
 
     .wrapper-home {
-      margin-top: -15vh;
-      transition: margin .3s .4s;
+      transform: translate3d(0, -10vh, 0);
+      transition: transform .4s .2s;
     }
 
   }

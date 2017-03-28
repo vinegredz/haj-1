@@ -93,9 +93,11 @@ $white:  #fff;
 $black:  #000;
 $red:    #d9534f !default;
 $orange: #f0ad4e !default;
-$yellow: #ffd500 !default;
+$yellow: #CCCC00; //#ffd500 !default;
 $green:  #5cb85c !default;
-$blue:   #007AFF;
+$blue:   #0038b8;
+$blue-bright:   #007AFF;
+$blue-light: #519fff;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
@@ -110,8 +112,8 @@ $gray-lightest:             #eee;
 // Reassign color vars to semantic color scheme
 $brand-primary:             $blue !default;
 $brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
+$brand-info:                $blue-light;
+$brand-warning:             $yellow;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
@@ -121,7 +123,7 @@ $brand-inverse:             $gray-dark !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            true !default;
-$enable-shadows:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
@@ -244,13 +246,12 @@ $grid-gutter-widths: (
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-cursive:   'Medula One', Georgia, "Times New Roman", cursive;
 $font-family-base:       $font-family-serif;
 
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:   1.25rem !default;
-$font-size-sm:   .875rem !default;
-$font-size-xs:   .75rem !default;
+$font-size-base: 1.15rem; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.4rem;
+$font-size-sm:   .9rem !default;
+$font-size-xs:   .8rem !default;
 
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
@@ -282,7 +283,7 @@ $display3-weight:     300 !default;
 $display4-weight:     300 !default;
 $display-line-height: $headings-line-height !default;
 
-$lead-font-size:   1.25rem !default;
+$lead-font-size:   $font-size-lg;
 $lead-font-weight: 300 !default;
 
 $small-font-size: 80% !default;
@@ -319,9 +320,9 @@ $letter-spacing-plus: .35px;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          0;
+$border-radius-lg:       .4rem;
+$border-radius-sm:       .2rem;
 
 $component-active-color: $white !default;
 $component-active-bg:    $brand-primary !default;
@@ -360,10 +361,10 @@ $table-border-color:            $gray-lighter !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  1rem !default;
+$btn-padding-x:                  1.2rem !default;
 $btn-padding-y:                  .5rem !default;
 $btn-line-height:                1.25 !default;
-$btn-font-weight:                $font-weight-normal !default;
+$btn-font-weight:                600;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
 $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
@@ -404,9 +405,9 @@ $btn-block-spacing-y:            .5rem !default;
 $btn-toolbar-margin:             .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              0;
-$btn-border-radius-lg:           0;
-$btn-border-radius-sm:           0;
+$btn-border-radius:              $border-radius-sm;
+$btn-border-radius-lg:           $border-radius-sm;
+$btn-border-radius-sm:           $border-radius-sm;
 
 $btn-transition:                 all .2s ease-in-out !default;
 
@@ -420,17 +421,17 @@ $input-line-height:              1.25 !default;
 $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
-$input-color:                    $gray !default;
-$input-border-color:             rgba($black,.15) !default;
+$input-color:                    $black;
+$input-border-color:             rgba(0,0,0,0);
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
-$input-border-radius:            $border-radius !default;
+$input-border-radius:            $border-radius-sm;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-bg-focus:                 $input-bg !default;
-$input-border-focus:             lighten($brand-primary, 25%) !default;
+$input-border-focus:             rgba(0,0,0,0);
 $input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, .6) !default;
 $input-color-focus:              $input-color !default;
 

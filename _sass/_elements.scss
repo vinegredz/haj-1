@@ -1,4 +1,83 @@
+// Buttons
+
+.btn:not(.btn-link) {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 80%;
+  }
+
+}
+
+// Cards
+
+.card-white {
+  box-shadow: $dropdown-box-shadow;
+  border: none;
+}
+
+.card-lightest {
+  box-shadow: $dropdown-box-shadow;
+  border-color: $gray-lightest;
+  background-color: $gray-lightest;
+}
+
+.card-subscribe {
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  right: 0;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: $dropdown-box-shadow;
+  transform: translate3d(100%, 0, 0);
+  will-change: transform;
+  transition: transform .1s;
+
+  &:not(.isRemoved).isShown {
+    transform: translate3d(-10%, 0, 0);
+    transition: transform .4s;
+  }
+
+}
+
+.card-oblique {
+  border: none;
+  background-color: $white;
+  @extend .shadow-secondary;
+  @include angle(before, $flip: true);
+  @include angle(after, $flip: false);
+
+  &.card-oblique-reverse {
+    @include angle(before, $flip: false);
+    @include angle(after, $flip: true);
+  }
+
+}
+
+.card-shift-top {
+  transform: translateY(-10vh);
+}
+
+// Forms
+
+.form-check, .form-group, .form-control, .form-control-file {
+  font-family: $font-family-sans-serif;
+}
+
+// Quotations
+
+.img-quote {
+  width: auto;
+  height: 70px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
 // Spinner
+
 .spinner {
   display: none;
   position: fixed;
@@ -29,4 +108,18 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+// Shadows
+.shadow-main {
+  box-shadow: $dropdown-box-shadow;
+}
+
+.shadow-secondary {
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
+}
+
+// Helpers
+.no-borders {
+  border: none;
 }
