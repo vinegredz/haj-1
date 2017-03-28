@@ -8,7 +8,7 @@ isInNav: true
 {% for post in site.posts %}
 
 <div class="media">
-    <img class="d-flex mr-3" width="180" src="{{ post.image | default: site.image-placeholder | relative_url }}"
+    <img class="d-flex mr-3 img-thumbnail" width="180" src="{{ post.image | default: site.image-placeholder-3 | relative_url }}"
          alt="Image">
     <div class="media-body">
         <p class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>

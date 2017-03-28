@@ -54,15 +54,16 @@
             docHeight = $(document).height(),
             delta = docHeight - footerHeight,
             userPos = $(window).scrollTop(),
-            checkPoint = (delta - (userPos + 150));
+            checkPoint = (delta - (userPos + 105));
 
-        console.log(delta);
-        console.log(userPos + 150);
+        if ($(window).height() > 600 && $(window).width() > 767) {
 
-        if (checkPoint < 160) {
-            cardSubs.addClass('isShown');
-        } else {
-            cardSubs.removeClass('isShown');
+            if (checkPoint < 160) {
+                cardSubs.addClass('isShown');
+            } else {
+                cardSubs.removeClass('isShown');
+            }
+
         }
 
     });
