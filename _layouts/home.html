@@ -23,7 +23,8 @@ layout: default
                 <p class="lead text-gray">We help Jews fight for their legal rights to make Aliya and return to the
                     Holy Land of Israel</p>
                 <p>When an American Jew wishes to return home to Israel, a rabbinical letter is enough to get the
-                    immigration visa. However, in the Former Soviet Union (FSU), endless lists of documents and paperwork can make
+                    immigration visa. However, in the Former Soviet Union (FSU), endless lists of documents and
+                    paperwork can make
                     Aliya
                     impossible. <span class="font-italic">FSU Jews are treated unjustly, humiliated, and blocked from immigration by the same government
             that guarantees their right to it.</span></p>
@@ -52,19 +53,18 @@ layout: default
                         <p>' | remove: '</p>' | truncatewords:15 }}</p>
                         <p><a href="{{ 'blog.html' | relative_url }}"
                               class="text-gray-light f-sans f-sm">See more posts in our exciting blog</a></p>
-
                     </div>
                 </div>
 
-                <div class="card card-white mt-4">
+                <div class="card card-white bg-info mt-4">
                     <div class="card-block">
-                        <p class="text-uppercase f-sans f-bold f-sm">New Tip</p>
+                        <p class="text-uppercase text-white f-sans f-bold f-sm">New Tip</p>
                         <h4 class="pt-3"><a href="{{ site.posts.first.url | relative_url }}">
                             {{site.posts.first.title}}</a></h4>
-                        <p class="text-gray-light">{{site.posts.last.excerpt | remove: '
+                        <p>{{site.posts.last.excerpt | remove: '
                         <p>' | remove: '</p>' | truncatewords:15 }}</p>
                         <p><a href="{{ 'guide.html' | relative_url }}"
-                              class="text-gray-light f-sans f-sm">See more tips in our helpful guid</a></p>
+                              class="f-sans f-sm">See more tips in our helpful guid</a></p>
                     </div>
                 </div>
 
