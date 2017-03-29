@@ -1,7 +1,11 @@
 // Links
 
-a {
+a, .btn-link {
   transition: .25s;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Sizes

@@ -29,7 +29,7 @@
 
                 <ul class="list-unstyled mt-5 mt-md-0">
                     <li>
-                        <div class="pb-3 f-med">{{site.title}}</div>
+                        <div class="pb-3 f-med">{{ site.title | strip_html }}</div>
                         {{site.address}}
                     </li>
                     <li class="pt-3">{{site.phone}}</li>
