@@ -17,7 +17,7 @@ isInNav: true
 
     <div class="card">
 
-        {% unless guide.thumbnail == empty %}<img class="card-img-top img-fluid" src="{{ guide.thumbnail | relative_url }}"
+        {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
                                                alt="Guide Image">{% endunless %}
         <div class="card-block">
 
