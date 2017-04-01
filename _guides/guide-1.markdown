@@ -1,6 +1,6 @@
 ---
+title: Law of Return
 layout: post
-title:  Law of Return
 section: Know the Law
 image_thumbnail: assets/img/placeholder-8.png
 ---
