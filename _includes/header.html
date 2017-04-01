@@ -25,13 +25,12 @@
                     {% assign current = navTitle.url %}
 
                     <a class="nav-link hidden-md-down {% if location == current %}nav-link-current{% endif %}"
-                       href="{{ navTitle.url | relative_url }}">{{ navTitle.title | escape
-                        }}</a>
+                       href="{{ navTitle.url | relative_url }}">{{ navTitle.title }}</a>
 
                     {% endfor %}
 
                     <a class="nav-link btn btn-danger"
-                       href="{{ 'donate.html' | relative_url  }}">Donate</a>
+                       href="/donate">Donate</a>
 
                 </nav>
 

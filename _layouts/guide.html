@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="subheader">
+
+    <div class="container">
+        <a class="text-gray-light" href="{{ 'guide.html' | relative_url }}"><h2 class="text-uppercase display-4 f-med">
+            Guide</h2></a>
+    </div>
+
+</div>
+
+<div class="container py-5 mt-5"> <!-- TODO check this margins and pads, need to remove them -->
+
+    <div class="row">
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+
+            <div class="card card-inverse bg-primary p-4 text-center card-white">
+                <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
+                <div class="f-xs f-sans">Israeli Parliament, 1950</div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-7 offset-lg-1">
+
+            <h1>{{ page.title }}</h1>
+            <p class="f-sans f-sm text-gray-light">
+                {{ page.date }}
+
+                {% if page.author %}
+                • {{ page.author }}
+                {% endif %}
+
+            </p>
+
+            {{ content }}
+
+        </div>
+
+    </div>
+
+</div>
