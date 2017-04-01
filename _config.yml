@@ -4,15 +4,24 @@ timezone: UTC
 collections:
   guides:
     title: Guides
-    layout: post
     output: true
   posts:
     title: Posts
-    layout: post
     output: true
   uploads:
     title: Uploads
     output: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: post
 description: Help a Jew. Help the Holy Land</em> is a group of dedicated legal professionals
   who want to help those who have been denied their right to return to the Holy Land
 url: http://haj.siteleaf.net/
