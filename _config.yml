@@ -4,9 +4,11 @@ timezone: UTC
 collections:
   guides:
     title: Guides
+    layout: post
     output: true
   posts:
     title: Posts
+    layout: post
     output: true
   uploads:
     title: Uploads
