@@ -1,11 +1,12 @@
 ---
 title: Law of Return
-layout: post
+date: 2017-04-01 17:45:00 Z
 section: Know the Law
 image_thumbnail: assets/img/placeholder-8.png
+layout: post
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in liffgula.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in liffgulaff.ff
 
 <!--more-->
 
