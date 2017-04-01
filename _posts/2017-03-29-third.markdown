@@ -1,8 +1,10 @@
 ---
+title: 'Real Story: They tried to make aliyah and failed'
+date: 2017-03-29 08:13:58 Z
+categories:
+- real
+- story
 layout: post
-title:  "Real Story: They tried to make aliyah and failed"
-date:   2017-03-29 11:13:58 +0300
-categories: real story
 image: assets/img/placeholder-6.png
 author: Thomas More
 ---
