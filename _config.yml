@@ -17,14 +17,14 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: '/blog/:year/:month/:day/:title'
-    author: 'Sophia Tupolev'
+    permalink: "/blog/:year/:month/:day/:title"
+    author: Sophia Tupolev
 - scope:
     path: ''
     type: guide
   values:
     layout: guide
-    permalink: '/guide/:title'
+    permalink: "/guide/:title"
     guide-section: ''
     thumbnail: ''
     image: ''
@@ -37,7 +37,7 @@ twitter: "//twitter.com"
 facebook: "//facebook.com"
 phone: "+972 54 555 55 55"
 address: 25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel
-permalink: '/:title/'
+permalink: "/:title/"
 image-placeholder: assets/img/placeholder.png
 image-placeholder-2: assets/img/placeholder-2.png
 image-placeholder-3: assets/img/placeholder-3.png
