@@ -3,7 +3,6 @@ title: We are taking off!
 date: 2017-03-24 15:13:58 Z
 categories:
 - update
-layout: post
 image: assets/img/placeholder-2.png
 ---
 

@@ -4,7 +4,6 @@ date: 2017-03-29 08:13:58 Z
 categories:
 - real
 - story
-layout: post
 image: assets/img/placeholder-6.png
 author: Thomas More
 ---
