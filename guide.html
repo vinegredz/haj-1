@@ -7,25 +7,36 @@ isInNav: true
 
 <div class="card-columns">
 
+    <div class="card card-inverse bg-primary p-4 text-center card-white">
+        <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+        <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
+        <div class="f-xs f-sans">Israeli Parliament, 1950</div>
+    </div>
+
     {% for guide in site.guide %}
 
     <div class="card">
-        {% if guide.thumbnail %}
-        <img class="card-img-top img-fluid" src="{{ guide.thumbnail | relative_url }}"
-             alt="Guide Image">
-        {% endif %}
+
+        {% unless guide.thumbnail == empty %}<img class="card-img-top img-fluid" src="{{ guide.thumbnail | relative_url }}"
+                                               alt="Guide Image">{% endunless %}
         <div class="card-block">
+
             <a href="{{ guide.url | relative_url }}">
                 <h4 class="card-title">{{ guide.title }}</h4>
             </a>
-            <p class="card-text">{{ guide.excerpt }}</p>
-            {% if guide.section %}
-            <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.section }}</a></p>
-            {% endif %}
+
+            <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
+
+            {% unless guide.categories == empty %}
+            <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
+            {% endunless %}
+
         </div>
     </div>
 
     {% endfor %}
+
+
 
 </div>
 
