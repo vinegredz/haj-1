@@ -1,6 +1,6 @@
 ---
 title: Escaping from Siberia
-date: 2017-03-28 15:13:58 Z
+date: 2017-03-28 15:13:58
 categories:
 - update
 layout: post

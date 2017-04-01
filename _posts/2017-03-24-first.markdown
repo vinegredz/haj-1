@@ -1,6 +1,6 @@
 ---
 title: We are taking off!
-date: 2017-03-24 15:13:58 Z
+date: 2017-03-24 15:13:58
 categories:
 - update
 layout: post
