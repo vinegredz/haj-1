@@ -5,9 +5,11 @@ collections:
   guides:
     title: Guides
     output: true
+    layout: post
   posts:
     title: Posts
     output: true
+    layout: post
   uploads:
     title: Uploads
     output: true
