@@ -1,36 +1,38 @@
----
-title: "<em>Help a Jew. Help the Holy Land</em>"
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
-  professionals who want to help those who have been denied their right to return
-  to the Holy Land\n"
-baseurl: "/haj"
-url: https://fkolesnik.github.io/haj
+title: <em>Help a Jew. Help the Holy Land</em>
+description: > # this means to ignore newlines until "baseurl:"
+  <em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal professionals who want
+  to help those who have been denied their right to return to the Holy Land
+baseurl: /haj
+url: "https://fkolesnik.github.io/haj"
 email: name@domain.com
 instagram: "//instagram.com"
 twitter: "//twitter.com"
 facebook: "//facebook.com"
-phone: "+972 54 555 55 55"
-address: 25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel
-permalink: "/:title"
-image-placeholder: assets/img/placeholder.png
-image-placeholder-2: assets/img/placeholder-2.png
-image-placeholder-3: assets/img/placeholder-3.png
-excerpt_separator: "<!--more-->"
+phone: +972 54 555 55 55
+address: '25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel'
+
+
+# Build settings
+
+permalink: /:title
+image-placeholder: 'assets/img/placeholder.png'
+image-placeholder-2: 'assets/img/placeholder-2.png'
+image-placeholder-3: 'assets/img/placeholder-3.png'
+excerpt_separator: <!--more-->
+
 markdown: kramdown
+
 gems:
-- jekyll-feed
+  - jekyll-feed
+
 exclude:
-- Gemfile
-- Gemfile.lock
-- node_modules
-- gulpfile.js
-- package.json
-- ".idea"
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - gulpfile.js
+    - package.json
+    - .idea
+
+
+
+

@@ -5,7 +5,8 @@ layout: default
 <div class="subheader">
 
     <div class="container">
-        <a class="text-gray-light" href="{{ 'blog.html' | relative_url }}"><h2 class="text-uppercase display-4 f-med">Blog</h2></a>
+        <a class="text-gray-light" href="{{ 'blog.html' | relative_url }}"><h2 class="text-uppercase display-4 f-med">
+            Blog</h2></a>
     </div>
 
 </div>
@@ -16,11 +17,10 @@ layout: default
 
         <div class="col-lg-7">
 
-            <h1>{{ page.title | escape }}</h1>
+            <h1>{{ page.title }}</h1>
             <p class="f-sans f-sm text-gray-light">
-                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b
-                    %-d, %Y"
-                    }}
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.date | date: "%b %-d, %Y" }}
                 </time>
                 {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
                     itemprop="name">{{ page.author }}</span></span>{% endif %}
