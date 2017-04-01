@@ -3,7 +3,7 @@ title: Law of Return
 date: 2017-04-01 17:45:00 Z
 categories:
 - Know the Law
-thumbnail: assets/img/placeholder-8.png
+thumbnail_image: "/uploads/stock-photo-199416697.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in liffgulaff.ff
