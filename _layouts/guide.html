@@ -5,7 +5,7 @@ layout: default
 <div class="subheader">
 
     <div class="container">
-        <a class="text-gray-light" href="{{ 'guide.html' | relative_url }}"><h2 class="text-uppercase display-4 f-med">
+        <a class="text-gray-light" href="{{ 'guide' | relative_url }}"><h2 class="text-uppercase display-4 f-med">
             Guide</h2></a>
     </div>
 
@@ -22,6 +22,15 @@ layout: default
                 <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
                 <div class="f-xs f-sans">Israeli Parliament, 1950</div>
             </div>
+
+            {% if site.guide %}
+            <div class="list-group f-sans shadow-main mt-5">
+                <div class="list-group-item text-uppercase f-sm f-bold">Most important guides</div>
+                {% for guide in site.guide limit:5 %}
+                <a href="{{guide.url}}" class="list-group-item">{{ guide.title }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
 
         </div>
 
