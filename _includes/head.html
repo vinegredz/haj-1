@@ -8,7 +8,7 @@
     <title>{% if page.title %}{{ page.title | strip_html | normalize_whitespace }} | {{site.title | strip_html |
         normalize_whitespace}}{% else %}{{ site.title | strip_html | normalize_whitespace }}{% endif %}</title>
 
-    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+    <link rel="icon" href="{{ 'favicon.ico' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | strip_html }}"
           href="{{ '/feed.xml' | relative_url }}">

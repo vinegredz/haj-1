@@ -2,14 +2,12 @@
 title: Help a Jew. Help the Holy Land
 timezone: UTC
 collections:
-  guides:
+  guide:
     title: Guides
     output: true
-    layout: post
   posts:
     title: Posts
     output: true
-    layout: post
   uploads:
     title: Uploads
     output: true
@@ -19,11 +17,17 @@ defaults:
     type: posts
   values:
     layout: post
+    permalink: '/blog/:year/:month/:day/:title'
+    author: 'Sophia Tupolev'
 - scope:
     path: ''
-    type: guides
+    type: guide
   values:
-    layout: post
+    layout: guide
+    permalink: '/guide/:title'
+    guide-section: ''
+    thumbnail: ''
+    image: ''
 description: Help a Jew. Help the Holy Land</em> is a group of dedicated legal professionals
   who want to help those who have been denied their right to return to the Holy Land
 url: http://haj.siteleaf.net/
@@ -33,7 +37,7 @@ twitter: "//twitter.com"
 facebook: "//facebook.com"
 phone: "+972 54 555 55 55"
 address: 25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel
-permalink: "/:title"
+permalink: '/:title/'
 image-placeholder: assets/img/placeholder.png
 image-placeholder-2: assets/img/placeholder-2.png
 image-placeholder-3: assets/img/placeholder-3.png
@@ -48,3 +52,4 @@ exclude:
 - gulpfile.js
 - package.json
 - ".idea"
+- ".sass-cache"
