@@ -1,8 +1,9 @@
 ---
+title: We are taking off!
+date: 2017-03-24 15:13:58 Z
+categories:
+- update
 layout: post
-title:  "We are taking off!"
-date:   2017-03-24 18:13:58 +0300
-categories: update
 image: assets/img/placeholder-2.png
 ---
 
