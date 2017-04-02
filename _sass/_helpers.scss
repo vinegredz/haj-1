@@ -3,6 +3,14 @@
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.bt-1 {
+  border-top: 1px solid $gray-lighter;
+}
+
+.b-white {
+  border-color: $white;
+}
+
 // Positioning
 .relative {
   position: relative;
