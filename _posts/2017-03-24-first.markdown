@@ -1,7 +1,7 @@
 ---
 title: We are taking off!
 date: 2017-03-24 15:13:00 Z
-thumbnail_image: "/uploads/photo-from-grid.jpg"  
+thumbnail_image: "/uploads/photo-from-grid.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula.
