@@ -1,6 +1,7 @@
 ---
 title: 'Real Story: They tried to make aliyah and failed'
-date: 2017-03-29 08:13:58 Z
+date: 2017-03-29 08:13:00 Z
+thumbnail_image: "/uploads/image43434.jpg"
 author: Thomas More
 ---
 
