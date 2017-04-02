@@ -38,8 +38,6 @@ phone: "+972 54 555 55 55"
 address: 25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel
 permalink: "/:title/"
 image-placeholder: assets/img/placeholder.png
-image-placeholder-2: assets/img/placeholder-2.png
-image-placeholder-3: assets/img/placeholder-3.png
 excerpt_separator: "<!--more-->"
 markdown: kramdown
 gems:
