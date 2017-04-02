@@ -26,8 +26,9 @@ defaults:
     layout: guide
     permalink: "/guide/:title"
     thumbnail_image: ''
-description: <em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal professionals
-  who want to help those who have been denied their right to return to the Holy Land
+description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
+  professionals who want to help those who have been denied their right to return
+  to the Holy Land"
 url: http://haj.siteleaf.net
 email: fkolesnik@gmail.com
 linkedin: "//linkedin.com"
