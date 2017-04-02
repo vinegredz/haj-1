@@ -11,15 +11,19 @@ layout: default
 
 </div>
 
-<div class="container py-5 mt-5"> <!-- TODO check this margins and pads, need to remove them -->
+<div class="container py-5 mt-5">
 
     <div class="row">
 
         <div class="col-lg-7">
 
+            {% unless page.thumbnail_image == empty %}
+            <img class="mb-4" src="{{ page.thumbnail_image | relative_url }}" alt="Image">
+            {% endunless %}
+
             <h1>{{ page.title }}</h1>
             <p class="f-sans f-sm text-gray-light">
-                {{ page.date }}
+                {{ page.date | date_to_long_string}}
 
                 {% if page.author %}
                 • {{ page.author }}
@@ -56,7 +60,7 @@ layout: default
 
             <div class="card card-white">
                 <img class="card-img-top"
-                     src="{{ site.posts.last.image | relative_url }}"
+                     src="{{ site.posts.last.thumbnail_image | default: site.image-placeholder | relative_url }}"
                      alt="Image">
                 <div class="card-block">
                     <p class="text-uppercase f-sans f-bold f-sm">Featured</p>

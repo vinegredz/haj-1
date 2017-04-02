@@ -30,8 +30,8 @@ layout: default
             that guarantees their right to it.</p>
                 <p><em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal professionals who want to help those
                     who have been denied their right to return to the Holy Land.</p>
-                <p>We seek to help individual Jews fight for their God-given and legal rights to
-                    settle in Israel.</p>
+                <p><blockquote>We seek to help individual Jews fight for their God-given and legal rights to
+                settle in Israel.</blockquote></p>
                 <p>The time of their homecoming is now, and you can be a part of the ingathering.</p>
                 <a class="btn btn-outline-primary my-5" href="{{ 'how-we-help' | relative_url }}">Learn more about our
                     work</a>
@@ -42,7 +42,7 @@ layout: default
 
                 <div class="card card-white">
                     <img class="card-img-top"
-                         src="{{ site.posts.last.image | default: site.image-placeholder | relative_url }}"
+                         src="{{ site.posts.last.thumbnail_image | default: site.image-placeholder | relative_url }}"
                          alt="Image">
                     <div class="card-block">
                         <p class="text-uppercase f-sans f-bold f-sm">Post</p>
@@ -50,7 +50,7 @@ layout: default
                             {{site.posts.last.title}}</a></h4>
                         <p class="text-gray-light">{{site.posts.last.excerpt | remove: '
                         <p>' | remove: '</p>' | truncatewords:15 }}</p>
-                        <p><a href="{{ 'blog.html' | relative_url }}"
+                        <p><a href="{{ 'blog' | relative_url }}"
                               class="text-gray-light f-sans f-sm">See more posts in our exciting blog</a></p>
                     </div>
                 </div>
@@ -58,11 +58,11 @@ layout: default
                 <div class="card card-white bg-info mt-4">
                     <div class="card-block">
                         <p class="text-uppercase text-white f-sans f-bold f-sm">Tip</p>
-                        <h4 class="pt-3"><a href="{{ site.posts.first.url | relative_url }}">
-                            {{site.posts.first.title}}</a></h4>
-                        <p>{{site.posts.last.excerpt | remove: '
+                        <h4 class="pt-3"><a href="{{ site.guide.first.url | relative_url }}">
+                            {{site.guide.first.title}}</a></h4>
+                        <p>{{site.guide.first.excerpt | remove: '
                         <p>' | remove: '</p>' | truncatewords:15 }}</p>
-                        <p><a href="{{ 'guide.html' | relative_url }}"
+                        <p><a href="{{ 'guide' | relative_url }}"
                               class="f-sans f-sm">See more tips in our helpful guide</a></p>
                     </div>
                 </div>

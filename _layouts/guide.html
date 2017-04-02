@@ -11,20 +11,17 @@ layout: default
 
 </div>
 
-<div class="container py-5 mt-5"> <!-- TODO check this margins and pads, need to remove them -->
+<div class="container py-5 mt-5">
 
     <div class="row">
 
         <div class="col-lg-7 push-lg-4 offset-lg-1">
 
-            <h1>{{ page.title }}</h1>
-            <p class="f-sans f-sm text-gray-light">
-                {{ page.date }}
+            {% unless page.thumbnail_image == empty %}
+            <img class="mb-4" src="{{ page.thumbnail_image | relative_url }}" alt="Image">
+            {% endunless %}
 
-                {% if page.author %}
-                • {{ page.author }}
-                {% endif %}
-            </p>
+            <h1 class="pb-3">{{ page.title }}</h1>
 
             {{ content }}
 
