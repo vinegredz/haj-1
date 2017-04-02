@@ -29,6 +29,23 @@ layout: default
 
             {{ content }}
 
+            <div class="bt-1 mt-4 py-3">
+                <div class="row">
+                    {% if page.previous.url %}
+                    <a class="col" href="{{page.previous.url}}">
+                        <p class="f-xs f-sans text-gray-dark">←&nbsp;Previous</p>
+                        {{page.previous.title}}
+                    </a>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <a class="col text-right" href="{{page.next.url}}">
+                        <p class="f-xs f-sans text-gray-dark">Next&nbsp;→</p>
+                        {{page.next.title}}
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
         </div>
 
         <div class="col-lg-4 pull-lg-8 mt-5 mt-lg-0">
