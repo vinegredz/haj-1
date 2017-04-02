@@ -5,46 +5,119 @@ layout: page
 isInNav: true
 ---
 
-{% assign targetguides = site.guide | where: 'categories', 'Know the Law' %}
+{% assign tab_second = site.guide | where: 'categories', 'Know the Law' %}
+{% assign tab_third = site.guide | where: 'categories', 'Prophecies and Facts' %}
 
-<p>{%for item in targetguides%}{{item.title}}{%endfor%}</p>
+<nav class="nav nav-pills flex-column flex-sm-row mb-4 f-sans" role="tablist">
+    <a class="flex-sm-fill text-sm-center nav-link active" data-toggle="tab" href="#tab-first" role="tab">All</a>
+    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#tab-second" role="tab">Know the Law</a>
+    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#tab-third" role="tab">Prophecies and Facts</a>
+</nav>
 
-<!--{% for guide in site.guide %}<p>{{ guide.title}}</p>{% endfor %}-->
+<div class="tab-content">
 
-<div class="card-columns">
+    <div class="tab-pane active" id="tab-first" role="tabpanel">
+        <div class="card-columns">
 
-    <div class="card card-inverse bg-primary p-4 text-center card-white">
-        <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
-        <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
-        <div class="f-xs f-sans">Israeli Parliament, 1950</div>
-    </div>
+            <div class="card card-inverse bg-primary p-4 text-center card-white">
+                <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
+                <div class="f-xs f-sans">Israeli Parliament, 1950</div>
+            </div>
 
-    {% for guide in site.guide %}
+            {% for guide in site.guide %}
 
-    <div class="card">
+            <div class="card">
 
-        {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid"
-                                                        src="{{ guide.thumbnail_image | relative_url }}"
-                                                        alt="Guide Image">{% endunless %}
-        <div class="card-block">
+                {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid"
+                                                                src="{{ guide.thumbnail_image | relative_url }}"
+                                                                alt="Guide Image">{% endunless %}
+                <div class="card-block">
 
-            <a href="{{ guide.url | relative_url }}">
-                <h4 class="card-title">{{ guide.title }}</h4>
-            </a>
+                    <a href="{{ guide.url | relative_url }}">
+                        <h4 class="card-title">{{ guide.title }}</h4>
+                    </a>
 
-            <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
+                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
 
-            {% unless guide.categories == empty %}
-            <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
-            {% endunless %}
+                    {% unless guide.categories == empty %}
+                    <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
+                    {% endunless %}
+
+                </div>
+
+            </div>
+
+            {% endfor %}
 
         </div>
     </div>
 
-    {% endfor %}
+    <div class="tab-pane" id="tab-second" role="tabpanel">
+        <div class="card-columns">
 
+            {%for guide in tab_second%}
+
+            <div class="card">
+
+                {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid"
+                                                                src="{{ guide.thumbnail_image | relative_url }}"
+                                                                alt="Guide Image">{% endunless %}
+                <div class="card-block">
+
+                    <a href="{{ guide.url | relative_url }}">
+                        <h4 class="card-title">{{ guide.title }}</h4>
+                    </a>
+
+                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
+
+                    {% unless guide.categories == empty %}
+                    <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
+                    {% endunless %}
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="tab-pane" id="tab-third" role="tabpanel">
+        <div class="card-columns">
+
+            {%for guide in tab_third%}
+
+            <div class="card">
+
+                {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid"
+                                                                src="{{ guide.thumbnail_image | relative_url }}"
+                                                                alt="Guide Image">{% endunless %}
+                <div class="card-block">
+
+                    <a href="{{ guide.url | relative_url }}">
+                        <h4 class="card-title">{{ guide.title }}</h4>
+                    </a>
+
+                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
+
+                    {% unless guide.categories == empty %}
+                    <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
+                    {% endunless %}
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
 
 </div>
+
+
 
 
 <!--
