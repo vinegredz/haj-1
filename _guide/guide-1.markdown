@@ -6,7 +6,7 @@ categories:
 thumbnail_image: "/uploads/stock-photo-199416697.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in liffgulaff.ff
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla  mi in liffgulaff.ff
 
 <!--more-->
 
