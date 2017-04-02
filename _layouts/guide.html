@@ -24,12 +24,18 @@ layout: default
                 {% if page.author %}
                 • {{ page.author }}
                 {% endif %}
-
             </p>
 
             {{ content }}
 
-            <div class="bt-1 mt-4 py-3">
+            <div class="bt-1 mt-4 pt-3 text-right">
+                <a class="icon-social facebook mr-3" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+                <a class="icon-social twitter mr-3" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}"
+                   rel="nofollow" target="_blank" title="Share on Twitter"></a>
+                <a class="icon-social linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source={{site.url}}" rel="nofollow" target="_blank" title="Share on Linkedin"></a>
+            </div>
+
+            <div class="bt-1 mt-2 py-3">
                 <div class="row">
                     {% if page.previous.url %}
                     <a class="col" href="{{page.previous.url}}">
@@ -58,7 +64,7 @@ layout: default
 
             {% if site.guide %}
             <div class="list-group f-sans shadow-main mt-5">
-                <div class="list-group-item text-uppercase f-sm f-bold">Most important guides</div>
+                <div class="list-group-item text-uppercase f-sm f-bold">Popular from the Guide</div>
                 {% for guide in site.guide limit:5 %}
                 <a href="{{guide.url}}" class="list-group-item">{{ guide.title }}</a>
                 {% endfor %}
