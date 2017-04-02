@@ -6,9 +6,9 @@
  */
 
 // Core variables and mixins
-@import "variables";
+//@import "variables";
 @import "mixins";
-@import "custom";
+//@import "custom";
 
 // Reset and dependencies
 @import "normalize";
@@ -20,25 +20,25 @@
 @import "images";
 @import "code";
 @import "grid";
-@import "tables";
+//@import "tables";
 @import "forms";
 @import "buttons";
 
 // Components
 @import "transitions";
-@import "dropdown";
-@import "button-group";
+//@import "dropdown";
+//@import "button-group";
 @import "input-group";
-@import "custom-forms";
+//@import "custom-forms";
 @import "nav";
-@import "navbar";
+//@import "navbar";
 @import "card";
-@import "breadcrumb";
+//@import "breadcrumb";
 @import "pagination";
-@import "badge";
+//@import "badge";
 @import "jumbotron";
-@import "alert";
-@import "progress";
+//@import "alert";
+//@import "progress";
 @import "media";
 @import "list-group";
 @import "responsive-embed";
@@ -46,9 +46,9 @@
 
 // Components w/ JavaScript
 @import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
+//@import "tooltip";
+//@import "popover";
+//@import "carousel";
 
 // Utility classes
 @import "utilities";
