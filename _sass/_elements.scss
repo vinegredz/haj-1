@@ -1,3 +1,9 @@
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // Buttons
 
 .btn:not(.btn-link) {
@@ -148,14 +154,14 @@
 
 // Icons
 .icon-social {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  transition: background-image .3s;
+  transition: background-image .15s;
   &:hover, &:active {
-    transition: background-image .3s;
+    transition: background-image .15s;
   }
 }
 
