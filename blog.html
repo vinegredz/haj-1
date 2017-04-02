@@ -13,14 +13,14 @@ isInNav: true
 
         <div class="card bg-trans border-left-0 border-right-0 border-top-0 mb-5">
 
-            {% if post.thumbnail_image %}
-            <img class="card-img-top" src="{{ post.image | relative_url }}"
-                 alt="Image">
-            {% endif %}
-
             <div class="card-block">
+                {% unless post.thumbnail_image == empty %}
+                <a href="{{ post.url | relative_url }}">
+                    <img class="mb-4" src="{{ post.thumbnail_image | relative_url }}" alt="Image">
+                </a>
+                {% endunless %}
                 <a href="{{ post.url | relative_url }}"><h3 class="card-title">{{ post.title | escape }}</h3></a>
-                <p class="f-sm text-gray-light f-sans">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p class="f-sm text-gray-light f-sans">{{ post.date | date_to_long_string }}</p>
                 <p>{{ post.excerpt }}</p>
             </div>
         </div>

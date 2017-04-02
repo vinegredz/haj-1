@@ -38,7 +38,7 @@ facebook: "//facebook.com"
 phone: "+972 54 555 55 55"
 address: 25 Mashukaze Street<br/>Tel Aviv-Yafo, 1231234<br/>Israel
 permalink: "/:title/"
-image-placeholder: assets/img/placeholder-image.png
+image-placeholder: assets/img/image-placeholder.png
 excerpt_separator: "<!--more-->"
 markdown: kramdown
 gems:
