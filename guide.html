@@ -5,6 +5,12 @@ layout: page
 isInNav: true
 ---
 
+{% assign targetguides = site.guide | where: 'categories', 'Know the Law' %}
+
+<p>{%for item in targetguides%}{{item.title}}{%endfor%}</p>
+
+<!--{% for guide in site.guide %}<p>{{ guide.title}}</p>{% endfor %}-->
+
 <div class="card-columns">
 
     <div class="card card-inverse bg-primary p-4 text-center card-white">
@@ -17,8 +23,9 @@ isInNav: true
 
     <div class="card">
 
-        {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
-                                               alt="Guide Image">{% endunless %}
+        {% unless guide.thumbnail_image == empty %}<img class="card-img-top img-fluid"
+                                                        src="{{ guide.thumbnail_image | relative_url }}"
+                                                        alt="Guide Image">{% endunless %}
         <div class="card-block">
 
             <a href="{{ guide.url | relative_url }}">
@@ -35,7 +42,6 @@ isInNav: true
     </div>
 
     {% endfor %}
-
 
 
 </div>
