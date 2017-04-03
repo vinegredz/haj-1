@@ -3,6 +3,7 @@ title: Roadblocks on the Long Way to Israel
 date: 2017-04-01 18:09:00 -05:00
 categories:
 - Know the Law
+thumbnail_image: "/uploads/241H.jpg"
 ---
 
 The worst problem that Jewish applicants for repatriation face is the consular policy of verbal refusals with no written explanation, which means a lack of transparency. 
