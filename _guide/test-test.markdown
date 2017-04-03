@@ -1,5 +1,5 @@
 ---
-title: Guide №5
+title: Opaque Requirements and the Burden of Proof
 date: 2017-04-02 09:24:00 -05:00
 categories:
 - Know the Law
