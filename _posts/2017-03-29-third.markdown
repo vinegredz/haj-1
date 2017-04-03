@@ -2,7 +2,6 @@
 title: 'Real Story: They tried to make aliyah and failed'
 date: 2017-03-29 08:13:00 Z
 thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
-author: Thomas More
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.
