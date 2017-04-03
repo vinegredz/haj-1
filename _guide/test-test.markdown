@@ -14,26 +14,29 @@ Not only is the first list sometimes challenging to come up with, but to make ma
 ​
 
 **The Official List:**
- 
-All passports in your possession
-Birth certificate
-Parents’ marriage certificate
-Both parents’ birth certificates
-Marriage certificates of your Jewish grandparents
-Jewish grandparents’ birth certificates 
-Employment records
-Military ID
-Educational records
-The Israeli IDs belonging to any of your Israeli relatives
-The home addresses of your Israeli relatives
-The telephone numbers of your Israeli relatives
-Exact repatriation date of your Israeli relatives
+
+* All passports in your possession
+
+* Birth certificate
+
+* Parents’ marriage certificate
+
+* Both parents’ birth certificates
+* Marriage certificates of your Jewish grandparents
+* Jewish grandparents’ birth certificates
+* Employment records
+* Military ID
+* Educational records
+* The Israeli IDs belonging to any of your Israeli relatives
+* The home addresses of your Israeli relatives
+* The telephone numbers of your Israeli relatives
+* Exact repatriation date of your Israeli relatives
 
 “Documents must be presented in the original.”
 
 **The Unofficial List:**
 
-Passport photographs of applicants 
+Passport photographs of applicants
 Parents’ divorce certificates
 Parents’ death certificates
 Photographs of Jewish gravestones of parents
@@ -50,6 +53,6 @@ Letters from Rabbis attesting to applicant’s involvement in community
 Police reports attesting to applicant’s non-criminal background
 Photographs of family engaging in Jewish customs.
 ​
-We help Jews find lost documents in official state archives, all the while demanding that the consulates stop being a barrier to Aliya from the former Soviet Union. 
- 
+We help Jews find lost documents in official state archives, all the while demanding that the consulates stop being a barrier to Aliya from the former Soviet Union.
+
 Learn how you can support our programs [here](http://haj.siteleaf.net/how-we-help/).
