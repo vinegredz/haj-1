@@ -3,6 +3,7 @@ title: Prophecy Continued
 date: 2017-04-01 18:16:00 -05:00
 categories:
 - Prophecies and Facts
+thumbnail_image: "/uploads/StockSnap_MGCPBAYBJ4.jpg"
 ---
 
 Jeremiah 32:36-37 (NIV):
