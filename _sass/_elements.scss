@@ -134,7 +134,7 @@ img {
 
 // Columns
 
-.card-columns {
+/*.card-columns {
 
   column-count: 1;
 
@@ -150,6 +150,23 @@ img {
     column-count: 3;
   }
 
+}*/
+
+// Masonry Grid
+.grid-item, .grid-sizer {
+
+  @media screen and (min-width: 769px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 33.3333%;
+  }
+
+}
+
+.grid-item {
+  margin-bottom: 2rem;
 }
 
 // Icons

@@ -90,3 +90,13 @@ var prefix = "tab_";
 if (hash) {
     $('.nav-tabs a[href="'+hash.replace(prefix,"")+'"]').tab('show');
 }
+
+
+// Masonry grid
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+});

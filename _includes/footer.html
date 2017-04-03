@@ -58,7 +58,6 @@
         <hr class="jumbotron-hr">
         <p class="f-xs text-gray-light">&copy; {{site.title}}. All rights reserved</p>
 
-
     </div>
 </footer>
 
@@ -66,4 +65,5 @@
 <script src="{{ 'assets/js/jquery.js' | relative_url }}"></script>
 <script src="{{ 'assets/js/tether.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
+{% if page.title == 'Guide' %}<script src="{{ 'assets/js/masonry.pkgd.min.js' | relative_url }}"></script>{% endif %}
 <script src="{{ 'assets/js/app.js' | relative_url }}"></script>

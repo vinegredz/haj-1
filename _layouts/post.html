@@ -25,9 +25,9 @@ layout: default
             <p class="f-sans f-sm text-gray-light">
                 {{ page.date | date_to_long_string}}
 
-                {% if page.author %}
+                {% unless page.author == empty %}
                 • {{ page.author }}
-                {% endif %}
+                {% endunless %}
 
             </p>
 

@@ -19,6 +19,7 @@ defaults:
     layout: post
     permalink: "/blog/:year/:month/:day/:title"
     thumbnail_image: ''
+    author: ''
 - scope:
     path: ''
     type: guide
