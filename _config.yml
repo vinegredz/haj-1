@@ -19,7 +19,7 @@ defaults:
     layout: post
     permalink: "/blog/:year/:month/:day/:title"
     thumbnail_image: ''
-    author: Sophia Tupolev
+    # author: Sophia Tupolev
 - scope:
     path: ''
     type: guide
