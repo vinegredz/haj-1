@@ -3,6 +3,7 @@ title: Opaque Requirements and the Burden of Proof
 date: 2017-04-02 09:24:00 -05:00
 categories:
 - Know the Law
+thumbnail_image: "/uploads/Screen%20Shot%202017-03-19%20at%208.39.07%20AM.png"
 ---
 
 **Opaque Requirements Lead to a Lack of Transparency in Consulates**
