@@ -14,23 +14,19 @@ Not only is the first list sometimes challenging to come up with, but to make ma
 ​
 
 **The Official List:**
-
-* All passports in your possession
-
-* Birth certificate
-
-* Parents’ marriage certificate
-
-* Both parents’ birth certificates
-* Marriage certificates of your Jewish grandparents
-* Jewish grandparents’ birth certificates
-* Employment records
-* Military ID
-* Educational records
-* The Israeli IDs belonging to any of your Israeli relatives
-* The home addresses of your Israeli relatives
-* The telephone numbers of your Israeli relatives
-* Exact repatriation date of your Israeli relatives
+All passports in your possession
+Birth certificate
+Parents’ marriage certificate
+Both parents’ birth certificates
+Marriage certificates of your Jewish grandparents
+Jewish grandparents’ birth certificates
+Employment records
+Military ID
+Educational records
+The Israeli IDs belonging to any of your Israeli relatives
+The home addresses of your Israeli relatives
+The telephone numbers of your Israeli relatives
+Exact repatriation date of your Israeli relatives
 
 “Documents must be presented in the original.”
 
