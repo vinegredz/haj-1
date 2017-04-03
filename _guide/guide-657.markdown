@@ -1,6 +1,8 @@
 ---
 title: Prophecies Already Fulfilled or in Progress
 date: 2017-04-01 18:09:00 -05:00
+categories:
+- Prophecies and Facts
 thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
 ---
 
