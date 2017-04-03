@@ -98,7 +98,10 @@ function buildMsnrGrid() {
 
 }
 
-buildMsnrGrid();
+window.onload = function () {
+    buildMsnrGrid();
+};
+
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
     buildMsnrGrid();
