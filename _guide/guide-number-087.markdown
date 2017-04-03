@@ -15,8 +15,7 @@ Ezekiel 22:14-15 (NIV):
 15 I will disperse you among the nations and scatter you through the countries; and I will put an end to your uncleanness.
 
 Jeremiah 16
-​
-“Who brought up the sons of Israel from the land of the north and from all the countries where He had banished them.’ For I will restore them to their own land which I gave to their fathers.”
+​“Who brought up the sons of Israel from the land of the north and from all the countries where He had banished them.’ For I will restore them to their own land which I gave to their fathers.”
 
 Ezekiel 34:13 (NIV):
 I will bring them out from the nations and gather them from the countries, and I will bring them into their own land. I will pasture them on the mountains of Israel, in the ravines and in all the settlements in the land.
