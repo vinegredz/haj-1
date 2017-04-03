@@ -76,27 +76,32 @@
 })();
 
 
-// Tabs
+// Masonry grid
+function buildMsnrGrid() {
 
-// wire up shown event
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    e.preventDefault();
-    console.log("tab shown...");
-});
+    var msnrGridArray = document.getElementsByClassName('grid');
 
-// read hash from page load and change tab
-var hash = document.location.hash;
-var prefix = "tab_";
-if (hash) {
-    $('.nav-tabs a[href="'+hash.replace(prefix,"")+'"]').tab('show');
+    for (var i = 0; i < msnrGridArray.length; i++) {
+
+        var msnry = new Masonry(msnrGridArray[i], {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true
+        });
+
+        imagesLoaded(msnrGridArray[i]).on('progress', function () {
+            msnry.layout();
+        });
+
+    }
+
 }
 
+buildMsnrGrid();
 
-// Masonry grid
-var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true
+$('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+    buildMsnrGrid();
 });
+
+

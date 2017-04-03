@@ -21,40 +21,44 @@ isInNav: true
 
         <div class="grid">
 
-            <!--<div class="card card-inverse bg-primary p-4 text-center card-white">
-                <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
-                <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
-                <div class="f-xs f-sans">Israeli Parliament, 1950</div>
-            </div>-->
+            <div class="grid-item">
+                <div class="card card-inverse bg-primary p-4 text-center card-white">
+                    <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                    <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
+                    <div class="f-xs f-sans">Israeli Parliament, 1950</div>
+                </div>
+            </div>
 
             <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
             {% for guide in site.guide %}
 
-                <div class="grid-item">
-                    <div class="card">
+            <div class="grid-item">
+                <div class="card">
 
-                        {% unless guide.thumbnail_image == empty %}
+                    {% unless guide.thumbnail_image == empty %}
+                    <a href="{{ guide.url | relative_url }}">
+                        <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
+                             alt="Image">
+                    </a>
+                    {% endunless %}
+                    <div class="card-block">
+
                         <a href="{{ guide.url | relative_url }}">
-                            <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
-                                 alt="Image">
+                            <h4 class="card-title">{{ guide.title }}</h4>
                         </a>
-                        {% endunless %}
-                        <div class="card-block">
 
-                            <a href="{{ guide.url | relative_url }}">
-                                <h4 class="card-title">{{ guide.title }}</h4>
-                            </a>
+                        <p class="card-text">{{ guide.excerpt | strip_html }}</p>
 
-                            <p class="card-text">{{ guide.excerpt | strip_html }}</p>
-
-                            <!--{% unless guide.categories == empty %}
-                            <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
-                            {% endunless %}-->
-
-                        </div>
+                        <!--{% unless guide.categories == empty %}
+                        <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
+                        {% endunless %}-->
 
                     </div>
+
                 </div>
+            </div>
 
             {% endfor %}
 
@@ -64,28 +68,43 @@ isInNav: true
 
     <div class="tab-pane" id="tab-second" role="tabpanel">
 
-        <div class="card-columns">
+        <div class="grid">
+
+            <div class="grid-item">
+                <div class="card card-inverse bg-primary p-4 text-center card-white">
+                    <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                    <p class="lead text-white py-3">“An oleh's visa shall be granted to every Jew who has expressed his
+                        desire to settle in Israel”</p>
+                    <div class="f-xs f-sans">The Law of Return, 1950, Israel</div>
+                </div>
+            </div>
+
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
 
             {% for guide in tab_second %}
 
-            <div class="card">
+            <div class="grid-item">
+                <div class="card">
 
-                {% unless guide.thumbnail_image == empty %}
-                <a href="{{ guide.url | relative_url }}">
-                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
-                </a>
-                {% endunless %}
-
-                <div class="card-block">
-
+                    {% unless guide.thumbnail_image == empty %}
                     <a href="{{ guide.url | relative_url }}">
-                        <h4 class="card-title">{{ guide.title }}</h4>
+                        <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
+                             alt="Image">
                     </a>
+                    {% endunless %}
 
-                    <p class="card-text">{{ guide.excerpt | strip_html }}</p>
+                    <div class="card-block">
+
+                        <a href="{{ guide.url | relative_url }}">
+                            <h4 class="card-title">{{ guide.title }}</h4>
+                        </a>
+
+                        <p class="card-text">{{ guide.excerpt | strip_html }}</p>
+
+                    </div>
 
                 </div>
-
             </div>
 
             {% endfor %}
@@ -96,28 +115,44 @@ isInNav: true
 
     <div class="tab-pane" id="tab-third" role="tabpanel">
 
-        <div class="card-columns">
+        <div class="grid">
+
+            <div class="grid-item">
+                <div class="card card-inverse bg-primary p-4 text-center card-white">
+                    <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                    <p class="lead text-white py-3">“I will bring them out from the nations and gather them from the
+                        countries, and I will bring them into their own land. I will pasture them on the mountains of
+                        Israel, in the ravines and in all the settlements in the land”</p>
+                    <div class="f-xs f-sans">Ezekiel, 34:13 NIV</div>
+                </div>
+            </div>
+
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
 
             {% for guide in tab_third %}
 
-            <div class="card">
+            <div class="grid-item">
+                <div class="card">
 
-                {% unless guide.thumbnail_image == empty %}
-                <a href="{{ guide.url | relative_url }}">
-                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
-                </a>
-                {% endunless %}
-
-                <div class="card-block">
-
+                    {% unless guide.thumbnail_image == empty %}
                     <a href="{{ guide.url | relative_url }}">
-                        <h4 class="card-title">{{ guide.title }}</h4>
+                        <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
+                             alt="Image">
                     </a>
+                    {% endunless %}
 
-                    <p class="card-text">{{ guide.excerpt | strip_html }}</p>
+                    <div class="card-block">
+
+                        <a href="{{ guide.url | relative_url }}">
+                            <h4 class="card-title">{{ guide.title }}</h4>
+                        </a>
+
+                        <p class="card-text">{{ guide.excerpt | strip_html }}</p>
+
+                    </div>
 
                 </div>
-
             </div>
 
             {% endfor %}
