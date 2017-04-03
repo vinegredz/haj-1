@@ -3,12 +3,8 @@ title: Prophecy Continued
 date: 2017-04-01 18:16:00 -05:00
 categories:
 - Prophecies and Facts
+thumbnail_image: "/uploads/StockSnap_MGCPBAYBJ4.jpg"
 ---
-
-More Prophecy
-
-Surviving Babylonian Rule: 
-
 
 Jeremiah 32:36-37 (NIV):
 36 "You are saying about this city, 'By the sword, famine and plague it will be handed over to the king of Babylon'; but this is what the LORD, the God of Israel, says:

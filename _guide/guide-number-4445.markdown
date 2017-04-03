@@ -1,15 +1,15 @@
 ---
-title: 'Guide #4445'
-date: 2017-04-01 23:22:00 Z
+title: A Brief History of Post-Soviet Repatriation
+date: 2017-04-01 18:22:00 -05:00
 categories:
 - Prophecies and Facts
 thumbnail_image: "/uploads/photo-from-grid.jpg"
 ---
 
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero.
+A long history of antisemitism in the former Soviet Union (FSU) caused large numbers of Jews to flee Russia and the fourteen former Soviet republics.
 
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.
+At the same time, rampant corruption in those countries caused Israeli consular officials to heavily scrutinize the veracity of documents provided as proof of Judaism, specifically, in the FSU... much more so than in the United States.
 
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.
+The Soviet Union had a long history of closed borders and subjecting citizens to exit visas (permission to leave the country), blocking Jews from emigrating for decades.
 
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.
+In the two decades that the Soviet Union has been gone, borders are open and ___ Jews have exercised their right to immigrate to Israel. That’s while 8,000 families were denied their right to repatriate to Israel in the same period, which could be up to 30,000 individuals. 
