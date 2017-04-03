@@ -3,6 +3,7 @@ title: Significant Historical Events and Prophecies Fulfilled
 date: 2017-04-03 06:00:00 -05:00
 categories:
 - Prophecies and Facts
+thumbnail_image: "/uploads/StockSnap_0PGJJDQ11W.jpg"
 ---
 
 Genesis 15:18 (NIV)
