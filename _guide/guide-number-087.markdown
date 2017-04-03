@@ -5,11 +5,6 @@ categories:
 - Prophecies and Facts
 ---
 
-More Prophecy
-
-Surviving Babylonian Rule: 
-
-
 Jeremiah 32:36-37 (NIV):
 36 "You are saying about this city, 'By the sword, famine and plague it will be handed over to the king of Babylon'; but this is what the LORD, the God of Israel, says:
 37 I will surely gather them from all the lands where I banish them in my furious anger and great wrath; I will bring them back to this place and let them live in safety.
