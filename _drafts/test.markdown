@@ -1,5 +1,7 @@
 ---
-title: Test
+title: Testing Hidden File
 date: 2017-04-03 06:28:00 Z
 ---
 
+Testing Hidden File
+Testing Hidden File
