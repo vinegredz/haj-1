@@ -12,6 +12,7 @@ The Israeli consulate in Moscow lists this set of required documents that an app
 ​
 Not only is the first list sometimes challenging to come up with, but to make matters worse, random items from the second list are demanded of applicants, who have to wait several months for a second appointment. Often, a third appointment is required when applicants  are asked for further items from the "unofficial list."
 ​
+
 **The Official List:**
  
 All passports in your possession
