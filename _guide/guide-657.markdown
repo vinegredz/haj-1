@@ -58,7 +58,7 @@ All the nations of the world will come together against Israel over the issue of
 
 
 A prophecy: The word of the Lord concerning Israel.
-The Lord, who stretches out the heavens, who lays the foundation of the earth,and who forms the human spirit within a person, declares: 2 “I am going to make Jerusalem a cup that sends all the surrounding peoples reeling. Judah will be besieged as well as Jerusalem. 3 On that day, when all the nations of the earth are gathered against her, I will make Jerusalem an immovable rock for all the nations. All who try to move it will injure themselves.
+The Lord, who stretches out the heavens, who lays the foundation of the earth, and who forms the human spirit within a person, declares: 2 “I am going to make Jerusalem a cup that sends all the surrounding peoples reeling. Judah will be besieged as well as Jerusalem. 3 On that day, when all the nations of the earth are gathered against her, I will make Jerusalem an immovable rock for all the nations. All who try to move it will injure themselves.
 
 Zechariah 12:1-3
                Fulfillment: Currently occurring.
