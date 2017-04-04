@@ -77,34 +77,34 @@
 
 
 // Masonry grid
-function buildMsnrGrid() {
+(function () {
 
-    var msnrGridArray = document.getElementsByClassName('grid');
+    buildMsnrGrid();
 
-    for (var i = 0; i < msnrGridArray.length; i++) {
+    function buildMsnrGrid() {
 
-        var msnry = new Masonry(msnrGridArray[i], {
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer',
-            percentPosition: true
-        });
+        var msnrGridArray = document.getElementsByClassName('grid');
 
-        imagesLoaded(msnrGridArray[i]).on('progress', function () {
-            msnry.layout();
-        });
+        for (var i = 0; i < msnrGridArray.length; i++) {
+
+            var msnry = new Masonry(msnrGridArray[i], {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                percentPosition: true
+            });
+
+            imagesLoaded(msnrGridArray[i]).on('progress', function () {
+                msnry.layout();
+            });
+
+        }
 
     }
 
-}
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+        buildMsnrGrid();
+    });
 
-window.onload = function () {
-    buildMsnrGrid();
-};
-
-
-$('a[data-toggle="tab"]').on('shown.bs.tab', function () {
-    buildMsnrGrid();
-});
-
+})();
 

@@ -20,7 +20,7 @@
 
                     {% assign current = navTitle.url %}
 
-                    <a class="nav-link hidden-md-down {% if location == current %}nav-link-current{% endif %}"
+                    <a class="nav-link hidden-md-down text-nowrap {% if location == current %}nav-link-current{% endif %}"
                        href="{{ navTitle.url | relative_url }}">{{ navTitle.title }}</a>
 
                     {% endfor %}
