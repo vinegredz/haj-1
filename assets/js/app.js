@@ -15,30 +15,19 @@
     }
     else {
 
-        window.onload = function () {
+        $(function () {
             body.classList.add('isLoadedFirst');
             setTimeout(function () {
                 spinner.classList.add('hideSpinner');
                 body.style.overflow = '';
             }, 12000);
-
-        };
+        });
 
         document.cookie = "haj-visited";
 
     }
 
 })();
-
-
-// Skip onload animation
-/*$('.btn-skip').on('click', function (e) {
- e.preventDefault();
- document.cookie = "haj-visited";
-
- location.reload();
-
- });*/
 
 
 // Subscribe card
@@ -79,7 +68,9 @@
 // Masonry grid
 (function () {
 
-    buildMsnrGrid();
+    $(function () {
+        buildMsnrGrid();
+    });
 
     function buildMsnrGrid() {
 
