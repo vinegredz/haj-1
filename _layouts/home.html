@@ -40,32 +40,7 @@ layout: default
 
             <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
 
-                <div class="card card-white">
-                    <img class="card-img-top"
-                         src="{{ site.posts.last.thumbnail_image | default: site.image-placeholder | relative_url }}"
-                         alt="Image">
-                    <div class="card-block">
-                        <p class="text-uppercase f-sans f-bold f-sm">Post</p>
-                        <h4 class="pt-3"><a href="{{ site.posts.last.url | relative_url }}">
-                            {{site.posts.last.title}}</a></h4>
-                        <p class="text-gray-light">{{site.posts.last.excerpt | remove: '
-                        <p>' | remove: '</p>' | truncatewords:15 }}</p>
-                        <p><a href="{{ 'blog' | relative_url }}"
-                              class="text-gray-light f-sans f-sm">See more posts in our exciting blog</a></p>
-                    </div>
-                </div>
-
-                <div class="card card-white bg-info mt-4">
-                    <div class="card-block">
-                        <p class="text-uppercase text-white f-sans f-bold f-sm">Tip</p>
-                        <h4 class="pt-3"><a href="{{ site.guide.first.url | relative_url }}">
-                            {{site.guide.first.title}}</a></h4>
-                        <p>{{site.guide.first.excerpt | remove: '
-                        <p>' | remove: '</p>' | truncatewords:15 }}</p>
-                        <p><a href="{{ 'guide' | relative_url }}"
-                              class="f-sans f-sm">See more tips in our helpful guide</a></p>
-                    </div>
-                </div>
+                {% include sidebar-programs.html %}
 
             </div>
 

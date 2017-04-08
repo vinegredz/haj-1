@@ -74,6 +74,10 @@ img {
   transform: translateY(-10vh);
 }
 
+.card-img-overlay {
+  bottom: auto;
+}
+
 // Forms
 
 .form-check, .form-group, .form-control, .form-control-file {
@@ -131,26 +135,6 @@ img {
 .shadow-secondary {
   box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
 }
-
-// Columns
-
-/*.card-columns {
-
-  column-count: 1;
-
-  .card {
-    border: none;
-  }
-
-  @include media-breakpoint-up(md) {
-    column-count: 2;
-  }
-
-  @include media-breakpoint-up(lg) {
-    column-count: 3;
-  }
-
-}*/
 
 // Masonry Grid
 .grid-item, .grid-sizer {
@@ -273,4 +257,35 @@ blockquote {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: $gray-light;
+}
+
+// Lists
+
+.numbers {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: numbers-counter;
+
+  li {
+    position: relative;
+    padding-left: 3.5rem;
+    margin-top: 1.8rem;
+    &:before {
+      content: counter(numbers-counter);
+      counter-increment: numbers-counter;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: $brand-info;
+      background-color: $white;
+      width: 2.2rem;
+      height: 2.2rem;
+      text-align: center;
+      border-radius: 100%;
+    }
+
+  }
+
 }

@@ -57,8 +57,8 @@ header {
 
 .subheader {
   padding-top: 2rem;
-  background-color: $gray-lighter;
-  color: darken($gray-lighter, 10%);
+  background-color: $white;
+  color: darken($white, 10%);
   font-family: $font-family-sans-serif;
   text-transform: uppercase;
   @include angle(after, $flip: false);
