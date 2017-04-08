@@ -6,13 +6,16 @@
 
         <div class="row">
 
-            <div class="col-6">
-                <a class="mt-2 d-inline-block" href="{{ '/' | relative_url}}">{% include logo.html %}</a>
+            <div class="col-sm-6 col-3" style="">
+                <a class="logo mt-2 d-inline-block" href="{{ '/' | relative_url}}">{% include logo.html %}</a>
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-6 col-9">
 
                 <nav class="nav justify-content-end">
+
+                    <a class="nav-link btn text-primary hidden-lg-up" data-toggle="modal"
+                       data-target=".modal-menu" href="#">Menu</a>
 
                     {% assign navTitlesArray = (site.pages | where: 'isInNav', 'true' | sort: 'id' ) %}
 
@@ -37,3 +40,35 @@
     </div>
 
 </header>
+
+<div class="modal modal-menu modal-fluid" tabindex="-1" role="dialog" aria-labelledby="modalMenuLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0 pt-2">
+                {% include logo.html %}
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <nav class="nav flex-column">
+
+                    {% for navTitle in navTitlesArray %}
+
+                    {% assign current = navTitle.url %}
+
+                    <a class="nav-link text-nowrap {% if location == current %}nav-link-current{% endif %}"
+                       href="{{ navTitle.url | relative_url }}">{{ navTitle.title }}</a>
+
+                    {% endfor %}
+
+                    <a class="nav-link text-danger" href="/donate">Donate</a>
+
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</div>

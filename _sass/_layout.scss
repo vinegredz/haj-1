@@ -64,6 +64,24 @@ header {
   @include angle(after, $flip: false);
 }
 
+.modal-menu {
+
+  font-family: $font-family-sans-serif;
+
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: $font-size-h2;
+    text-align: center;
+
+    &.nav-link-current {
+      color: $black;
+    }
+
+  }
+
+}
+
 // It's for body.homepage only
 .jumbotron {
   background-image: url('../assets/img/bg.jpg');
