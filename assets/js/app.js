@@ -1,5 +1,3 @@
-
-
 // On load
 (function () {
 
@@ -8,7 +6,7 @@
 
     body.style.overflow = 'hidden';
 
-    if (document.cookie.indexOf("haj-visited") >= 0) {
+    if (document.cookie.indexOf("haj-visited") !== -1) {
 
         body.classList.add('isLoaded');
         spinner.classList.add('hideSpinner');
