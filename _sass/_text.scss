@@ -1,3 +1,37 @@
+// Text for mobile TODO: temporary, make a responsive font
+
+@include media-breakpoint-down(sm) {
+
+  body {
+    font-size: 1rem;
+  }
+
+  .display-3 {
+    font-size: 2rem;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  h1, .h1 {
+    font-size: 1.6rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.4rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.3rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+}
+
 // Links
 
 a, .btn-link {
