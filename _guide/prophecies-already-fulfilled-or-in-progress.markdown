@@ -11,7 +11,7 @@ thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
 >"The land I gave to Abraham and Isaac I also give to you, and I will give this land to your descendants after you," (Genesis 35:12)
 
 >"He will raise a banner for the nations and gather the exiles of Israel; he will assemble the scattered people of Judah from the four quarters of the earth." (Isaiah 11:12) Fulfillment: 20th Century and continuing.
-​
+
 **The re-establishment of the State of Israel, fulfilled on May 14, 1948**
 
 >"Can a country be born in a day or a nation be brought forth in a moment? Yet no sooner is Zion in labor than she gives birth to her children." (Isaiah 66:8)
