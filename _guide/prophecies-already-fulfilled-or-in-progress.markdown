@@ -25,11 +25,11 @@ thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
 >This is what the Lord Almighty says: 'It may seem marvelous to the remnant of this people at that time, but will it seem marvelous to me?' declares the Lord Almighty.
 
 >This is what the Lord Almighty says: 'I will save my people from the countries of the east and the west. I will bring them back to live in Jerusalem; they will be my people, and I will be faithful and righteous to them as their God.' (Zechariah 8:4-8)
-​
+
 **The desert terrain of Israel made to bloom, fulfilled in the 20th century**
 
 >"The desolate land will be cultivated instead of lying desolate in the sight of all who pass through it. They will say, 'This land that was laid waste has become like the garden of Eden; the cities that were lying in ruins, desolate and destroyed, are now fortified and inhabited.' (Ezekiel 36:34-35)
-​
+
 **The revival of the Hebrew language, fulfilled in the 19th and 20th centuries**
 
 >"Restoration of Israel’s Remnant
