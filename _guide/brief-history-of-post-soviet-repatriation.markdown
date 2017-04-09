@@ -3,7 +3,7 @@ title: A Brief History of Post-Soviet Repatriation
 date: 2017-04-01 18:22:00 -05:00
 categories:
 - Prophecies and Facts
-thumbnail_image: "/uploads/photo-from-grid.jpg"
+thumbnail_image: "/uploads/Screen%20Shot%202017-04-09%20at%209.38.21%20AM.png"
 ---
 
 A long history of antisemitism in the former Soviet Union (FSU) caused large numbers of Jews to flee Russia and the fourteen former Soviet republics.
