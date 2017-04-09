@@ -36,7 +36,7 @@ thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
 “Then I will purify the lips of the peoples,
 that all of them may call on the name of the Lord
 and serve him shoulder to shoulder." (Zephaniah 3:9)
-​
+
 **The world will be in conflict with Israel over its control of Jerusalem, being fulfilled in the present day**
 
 >"A prophecy: The word of the Lord concerning Israel.
