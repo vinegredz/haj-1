@@ -50,4 +50,3 @@ exclude:
 - package.json
 - ".idea"
 - ".sass-cache"
-
