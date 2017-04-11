@@ -41,7 +41,6 @@ image-placeholder: assets/img/image-placeholder.png
 markdown: kramdown
 gems:
 - jekyll-feed
-- jekyll/minibundle
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -50,8 +49,3 @@ exclude:
 - package.json
 - ".idea"
 - ".sass-cache"
-sass:
-  style: compressed
-minibundle:
-  minifier_commands:
-    js: node_modules/.bin/uglifyjs -

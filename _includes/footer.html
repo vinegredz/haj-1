@@ -61,23 +61,9 @@
     </div>
 </footer>
 
-
-{% minibundle js %}
-source_dir: assets/js/
-destination_path: assets/js/
-baseurl: '{{ site.url }}{{ site.baseurl }}/'
-assets:
-- jquery
-- tether
-- bootstrap
-- masonry
-- imagesloaded
-- app
-{% endminibundle %}
-
-<!--<script src="{{ 'assets/js/jquery.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/tether.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/bootstrap.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/masonry.pkgd.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/imagesloaded.pkgd.min.js ' | absolute_url }}"></script>
-<script src="{{ 'assets/js/app.js' | absolute_url }}"></script>-->
+<script src="{{site.url}}{{site.baseurl}} 'assets/js/jquery.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/app.js"></script>
