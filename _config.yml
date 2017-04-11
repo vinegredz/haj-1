@@ -28,7 +28,7 @@ defaults:
 description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
   professionals who want to help those who have been denied their right to return
   to the Holy Land"
-baseurl: ""
+baseurl: ''
 url: "//haj.siteleaf.net"
 email: fkolesnik@gmail.com
 linkedin: "//linkedin.com"
