@@ -11,7 +11,6 @@ thumbnail_image: "/uploads/arrival.jpg"
 The Israeli consulate in Moscow lists this set of required documents that an applicant should bring in order to prove their Judaism. Compare this with the second, "unofficial list" below, which is never mentioned on the website or by phone.
 ​
 Not only is the first list sometimes challenging to come up with, but to make matters worse, random items from the second list are demanded of applicants, who have to wait several months for a second appointment. Often, a third appointment is required when applicants  are asked for further items from the "unofficial list."
-​
 
 **The Official List:**
 All passports in your possession
@@ -47,7 +46,7 @@ Photographs of Jewish gravestones of great-grandparents
 Certified Red Cross archive records of resettlement during WWII
 Letters from Rabbis attesting to applicant’s involvement in community
 Police reports attesting to applicant’s non-criminal background
-Photographs of family engaging in Jewish customs.
+Photographs of family members engaging in Jewish customs.
 ​
 We help Jews find lost documents in official state archives, all the while demanding that the consulates stop being a barrier to Aliya from the former Soviet Union.
 
