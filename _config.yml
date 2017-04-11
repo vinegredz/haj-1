@@ -28,7 +28,7 @@ defaults:
 description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
   professionals who want to help those who have been denied their right to return
   to the Holy Land"
-baseurl: ""
+baseurl: ''
 url: "//haj.siteleaf.net"
 email: fkolesnik@gmail.com
 linkedin: "//linkedin.com"
@@ -39,7 +39,9 @@ address: 9600 Escarpment Blvd. Ste. 745-208<br/>Austin, TX 78749<br/>USA
 permalink: pretty
 image-placeholder: assets/img/image-placeholder.png
 markdown: kramdown
-gems: ['jekyll-feed', 'jekyll/minibundle']
+gems:
+- jekyll-feed
+- jekyll/minibundle
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -50,8 +52,6 @@ exclude:
 - ".sass-cache"
 sass:
   style: compressed
-
-
 minibundle:
   minifier_commands:
     js: node_modules/.bin/uglifyjs -
