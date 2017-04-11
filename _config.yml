@@ -17,7 +17,6 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/blog/:year/:month/:day/:title"
     thumbnail_image: ''
     author: ''
 - scope:
@@ -25,23 +24,22 @@ defaults:
     type: guide
   values:
     layout: guide
-    permalink: "/guide/:title"
     thumbnail_image: ''
 description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
   professionals who want to help those who have been denied their right to return
   to the Holy Land"
-url: http://haj.siteleaf.net
+baseurl: ""
+url: "//haj.siteleaf.net"
 email: fkolesnik@gmail.com
 linkedin: "//linkedin.com"
 twitter: "//twitter.com"
 facebook: "//facebook.com"
 phone: "+44 7412 048124​⁠​"
 address: 9600 Escarpment Blvd. Ste. 745-208<br/>Austin, TX 78749<br/>USA
-permalink: "/:title/"
+permalink: pretty
 image-placeholder: assets/img/image-placeholder.png
 markdown: kramdown
-gems:
-- jekyll-feed
+gems: ['jekyll-feed', 'jekyll/minibundle']
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -50,3 +48,10 @@ exclude:
 - package.json
 - ".idea"
 - ".sass-cache"
+sass:
+  style: compressed
+
+
+minibundle:
+  minifier_commands:
+    js: node_modules/.bin/uglifyjs -

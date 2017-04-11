@@ -62,11 +62,15 @@
 </footer>
 
 
-<script src="{{ 'assets/js/jquery.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/tether.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
-{% if page.title == 'Guide' %}
-<script src="{{ 'assets/js/masonry.pkgd.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/imagesloaded.pkgd.min.js ' | relative_url }}"></script>
-{% endif %}
-<script src="{{ 'assets/js/app.js' | relative_url }}"></script>
+{% minibundle js %}
+source_dir: assets/js/
+destination_path: assets/js/
+baseurl: '{{ site.url }}{{ site.baseurl }}/'
+assets:
+- jquery
+- tether
+- bootstrap
+- masonry
+- imagesloaded
+- app
+{% endminibundle %}

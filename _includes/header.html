@@ -7,7 +7,7 @@
         <div class="row">
 
             <div class="col-sm-6 col-3" style="">
-                <a class="logo mt-2 d-inline-block" href="{{ '/' | relative_url}}">{% include logo.html %}</a>
+                <a class="logo mt-2 d-inline-block" href="{{site.url}}{{site.baseurl}}">{% include logo.html %}</a>
             </div>
 
             <div class="col-sm-6 col-9">
@@ -24,7 +24,7 @@
                     {% assign current = navTitle.url %}
 
                     <a class="nav-link hidden-md-down text-nowrap {% if location == current %}nav-link-current{% endif %}"
-                       href="{{ navTitle.url | relative_url }}">{{ navTitle.title }}</a>
+                       href="{{site.url}}{{site.baseurl}}{{navTitle.url}}">{{ navTitle.title }}</a>
 
                     {% endfor %}
 
@@ -60,7 +60,7 @@
                     {% assign current = navTitle.url %}
 
                     <a class="nav-link text-nowrap {% if location == current %}nav-link-current{% endif %}"
-                       href="{{ navTitle.url | relative_url }}">{{ navTitle.title }}</a>
+                       href="{{site.url}}{{site.baseurl}}{{navTitle.url}}">{{ navTitle.title }}</a>
 
                     {% endfor %}
 
