@@ -36,21 +36,21 @@
 
     .jumbotron .jumbotron-overlay {
       background-color: rgba($blue, .9);
-      transition: background-color 7s 3s;
+      transition: background-color 2s 10s;
     }
 
     .a-1 {
-      transition: opacity 1s 5s;
+      transition: opacity 1s 3s;
       opacity: 1;
     }
 
     .a-2 {
-      transition: opacity 1s 7s;
+      transition: opacity 1s 6s;
       opacity: 1;
     }
 
     .a-3 {
-      transition: opacity 1s 10s;
+      transition: opacity 1s 9s;
       opacity: 1;
     }
 

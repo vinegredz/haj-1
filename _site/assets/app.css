@@ -4981,6 +4981,9 @@ a, .btn-link {
 .text-black {
   color: #000; }
 
+.text-red-light {
+  color: #d63232; }
+
 p {
   margin: 0; }
   p + p {
@@ -5006,21 +5009,6 @@ img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
   border-color: #eee;
   background-color: #eee; }
-
-.card-subscribe {
-  position: fixed;
-  z-index: 1000;
-  bottom: 2rem;
-  right: 0;
-  width: 100%;
-  max-width: 360px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-  transform: translate3d(100%, 0, 0);
-  will-change: transform;
-  transition: transform .1s; }
-  .card-subscribe:not(.isRemoved).isShown {
-    transform: translate3d(-10%, 0, 0);
-    transition: transform .4s; }
 
 .card-oblique {
   border: none;
@@ -5091,8 +5079,9 @@ img {
       transform: skewY(1.5deg);
       transform-origin: 0 100%; }
 
-.card-shift-top {
-  transform: translateY(-10vh); }
+@media (min-width: 576px) {
+  .card-shift-top {
+    transform: translateY(-15vh); } }
 
 .card-img-overlay {
   bottom: auto; }
@@ -5256,18 +5245,18 @@ blockquote {
 
 .homepage.isLoadedFirst .jumbotron .jumbotron-overlay {
   background-color: rgba(0, 56, 184, 0.9);
-  transition: background-color 7s 3s; }
+  transition: background-color 2s 10s; }
 
 .homepage.isLoadedFirst .a-1 {
-  transition: opacity 1s 5s;
+  transition: opacity 1s 3s;
   opacity: 1; }
 
 .homepage.isLoadedFirst .a-2 {
-  transition: opacity 1s 7s;
+  transition: opacity 1s 6s;
   opacity: 1; }
 
 .homepage.isLoadedFirst .a-3 {
-  transition: opacity 1s 10s;
+  transition: opacity 1s 9s;
   opacity: 1; }
 
 .homepage.isLoadedFirst header {
@@ -5276,7 +5265,10 @@ blockquote {
 
 .homepage.isLoadedFirst .wrapper-home {
   transition: transform .3s 12s;
-  transform: translate3d(0, -10vh, 0); }
+  transform: translate3d(0, -35vh, 0); }
+
+.homepage.isLoadedFirst .footer-main {
+  margin-top: -20vh; }
 
 .homepage.isLoaded .jumbotron {
   transform: scale(1); }
@@ -5293,5 +5285,8 @@ blockquote {
   transition: transform .4s .2s; }
 
 .homepage.isLoaded .wrapper-home {
-  transform: translate3d(0, -10vh, 0);
+  transform: translate3d(0, -35vh, 0);
   transition: transform .4s .2s; }
+
+.homepage.isLoaded .footer-main {
+  margin-top: -20vh; }
