@@ -72,48 +72,38 @@
 })();
 
 
-// Masonry grid
+// Guide grid
 (function () {
 
+    function shuffleCards() {
 
-    function buildMsnrGrid() {
+        var cardsStr = '',
+            cardsArrayNew = [],
+            itemsToShuffle = document.querySelector('.grid'),
+            cardsArray = itemsToShuffle.querySelectorAll('.grid .grid-item');
 
-        var msnrGridArray = document.getElementsByClassName('grid');
-
-        for (var i = 0; i < msnrGridArray.length; i++) {
-
-            var msnry = new Masonry(msnrGridArray[i], {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                gutter: '.gutter-sizer',
-                percentPosition: true
-            });
-
-            imagesLoaded(msnrGridArray[i]).on('progress', function () {
-                msnry.layout();
-            });
-
+        for (var i = 0; i < cardsArray.length; i++) {
+            cardsArrayNew.push(cardsArray[i].outerHTML);
         }
 
+        cardsArrayNew.sort(function () {
+            return 0.5 - Math.random();
+        });
+
+        cardsStr += cardsArrayNew.join('');
+
+        itemsToShuffle.innerHTML = cardsStr;
+
     }
 
-    function shuffleGuideCards() {
-        var cardsArray = [];
-        cardsArray = document.querySelectorAll('#guide-all .grid-item');
-        console.log(cardsArray);
+    if (location.pathname === '/guide/') {
+        shuffleCards();
 
+        window.addEventListener('resize', function () {
+            salvattore.recreateColumns(document.querySelector('.grid'))
+        })
     }
 
-   /* var myarray = [15, 25, 35, 45];
-    myarray.sort(function() { return 0.5 - Math.random() });
-    console.log(myarray);*/
-
-
-    buildMsnrGrid();
-
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
-        buildMsnrGrid();
-    });
 
 })();
 
