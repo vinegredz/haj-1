@@ -9,7 +9,7 @@ layout: default
 
     <div class="container">
 
-        <div class="row py-5">
+        <div class="row pt-5">
 
             <div class="col-lg-6 offset-lg-1">
 
@@ -22,9 +22,9 @@ layout: default
                 <p><em>Help a Jew. Help the Holy Land</em> is a charitable organization
                     to help those who have been denied their right to return to the Holy Land.</p>
                 <p>
-                <blockquote>
+                <blockquote class="display-4 my-5">
                     We are organizing Jewry for its coming destiny.
-                    <div class="f-sm mt-2">— Theodor Herzl</div>
+                    <div class="f-xs mt-2 f-sans">— Theodor Herzl</div>
                 </blockquote>
                 </p>
                 <p>The time of their homecoming is now, and you can be a part of the ingathering.</p>
@@ -35,15 +35,27 @@ layout: default
 
             <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
 
-                {% include sidebar-programs.html %}
+                <div class="card card-oblique card-shift-top px-md-5 px-2 py-2 text-center">
+                    <img class="img-quote" width="70" height="65" src="{{ 'assets/img/tora.svg' | relative_url }}">
+                    <p class="h4 text-primary pb-2 pt-3">“Through you every family on earth will be blessed.”</p>
+                    <div class="f-xs f-sans">Genesis, 12:3</div>
+                </div>
+
+                <div class="card-shift-top mt-5">
+                    {% include sidebar-programs.html %}
+                </div>
+
+                <div class="card-shift-top mt-5">
+                    {% include subscribe.html %}
+                </div>
 
             </div>
 
         </div>
 
-        <div class="card card-oblique card-oblique-reverse px-md-5 px-2 py-2 mt-5 text-center">
+        <div class="card card-oblique card-oblique-reverse px-md-5 px-2 py-2 mt-5 text-center hidden-sm-down">
             <img class="img-quote" width="61" height="70" src="{{ 'assets/img/branch.svg' | relative_url }}">
-            <p class="h3 text-primary pb-2 pt-3">“...I will make them one nation in the land...”</p>
+            <p class="h1 text-primary pb-2 pt-3">“...I will make them one nation in the land...”</p>
             <div class="f-xs f-sans">Ezekiel, 37:22</div>
         </div>
 

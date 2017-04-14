@@ -61,7 +61,11 @@
 
     .wrapper-home {
       transition: transform .3s 12s;
-      transform: translate3d(0, -10vh, 0);
+      transform: translate3d(0, -35vh, 0);
+    }
+
+    .footer-main {
+      margin-top: -20vh;
     }
 
   }
@@ -87,8 +91,12 @@
     }
 
     .wrapper-home {
-      transform: translate3d(0, -10vh, 0);
+      transform: translate3d(0, -35vh, 0);
       transition: transform .4s .2s;
+    }
+
+    .footer-main {
+      margin-top: -20vh;
     }
 
   }

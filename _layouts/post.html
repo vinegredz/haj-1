@@ -6,7 +6,7 @@ layout: default
 
     <div class="container">
         <a href="{{ 'blog' | relative_url }}"><h2 class="text-uppercase display-4 f-med">
-            Blog</h2></a>
+            ←&nbsp;Blog</h2></a>
     </div>
 
 </div>
@@ -60,7 +60,9 @@ layout: default
 
             {% include sidebar-programs.html %}
 
-            {% include subscribe-static.html %}
+            <div class="mt-5">
+                {% include subscribe.html %}
+            </div>
 
         </div>
 

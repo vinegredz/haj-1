@@ -25,9 +25,7 @@ defaults:
   values:
     layout: guide
     thumbnail_image: ''
-description: "<em>Help a Jew. Help the Holy Land</em> is a group of dedicated legal
-  professionals who want to help those who have been denied their right to return
-  to the Holy Land"
+description: "<em>Help a Jew. Help the Holy Land</em> is a charitable organization to help those who have been denied their right to return to the Holy Land. Help A Jew is a nonprofit corporation that has applied to the IRS for 501(c)(3) tax-exemption."
 baseurl: ''
 url: "//haj.siteleaf.net"
 email: fkolesnik@gmail.com
@@ -35,7 +33,7 @@ linkedin: "//linkedin.com"
 twitter: "//twitter.com"
 facebook: "//facebook.com"
 phone: "+44 7412 048124​⁠​"
-address: 9600 Escarpment Blvd. Ste. 745-208<br/>Austin, TX 78749<br/>USA
+address: 10200 US Hwy 290 W №301<br/> Austin, Texas 78736<br/>USA
 permalink: pretty
 image-placeholder: assets/img/image-placeholder.png
 markdown: kramdown

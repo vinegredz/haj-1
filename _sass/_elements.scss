@@ -30,25 +30,6 @@ img {
   background-color: $gray-lightest;
 }
 
-.card-subscribe {
-  position: fixed;
-  z-index: 1000;
-  bottom: 2rem;
-  right: 0;
-  width: 100%;
-  max-width: 360px;
-  box-shadow: $dropdown-box-shadow;
-  transform: translate3d(100%, 0, 0);
-  will-change: transform;
-  transition: transform .1s;
-
-  &:not(.isRemoved).isShown {
-    transform: translate3d(-10%, 0, 0);
-    transition: transform .4s;
-  }
-
-}
-
 .card-oblique {
   border: none;
   background-color: $white;
@@ -64,7 +45,9 @@ img {
 }
 
 .card-shift-top {
-  transform: translateY(-10vh);
+  @include media-breakpoint-up(sm) {
+    transform: translateY(-15vh);
+  }
 }
 
 .card-img-overlay {
