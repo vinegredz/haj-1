@@ -56,9 +56,19 @@
         </div>
 
         <hr class="jumbotron-hr">
-        <p class="f-xs text-gray-light">&copy; {{site.title}}. All rights reserved</p>
+        <p class="f-xs text-gray-light">&copy; {{site.title}}. All rights reserved</p> {{site.environment}} {{site.url}}
 
     </div>
 </footer>
 
+{% if site.url == 'http://localhost:4000' %}
+<script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/tether.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/masonry.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/imagesloaded.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/app.js"></script>
+{% else %}
 <script src="{{site.url}}{{site.baseurl}}/assets/js/bundle.js"></script>
+{% endif %}
+

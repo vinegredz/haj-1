@@ -75,9 +75,6 @@
 // Masonry grid
 (function () {
 
-    $(function () {
-        buildMsnrGrid();
-    });
 
     function buildMsnrGrid() {
 
@@ -99,6 +96,20 @@
         }
 
     }
+
+    function shuffleGuideCards() {
+        var cardsArray = [];
+        cardsArray = document.querySelectorAll('#guide-all .grid-item');
+        console.log(cardsArray);
+
+    }
+
+   /* var myarray = [15, 25, 35, 45];
+    myarray.sort(function() { return 0.5 - Math.random() });
+    console.log(myarray);*/
+
+
+    buildMsnrGrid();
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
         buildMsnrGrid();
