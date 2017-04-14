@@ -36,7 +36,6 @@
 
 })();
 
-
 // Subscribe card
 (function () {
 
@@ -70,7 +69,6 @@
 
 
 })();
-
 
 // Guide grid
 (function () {
