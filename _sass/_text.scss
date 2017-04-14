@@ -99,7 +99,6 @@ a, .btn-link {
 }
 
 // Colors
-
 .text-gray {
   color: $gray;
 }
@@ -116,8 +115,11 @@ a, .btn-link {
   color: $black;
 }
 
-// Paragraphs
+.text-red-light {
+  color: lighten($red, 5%);
+}
 
+// Paragraphs
 p {
   margin: 0;
   & + p {
