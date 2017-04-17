@@ -23,8 +23,10 @@
   }
 
   .wrapper-home {
-    transform: translate3d(0, 15vh, 0);
-    will-change: transform;
+    @include media-breakpoint-up(md) {
+      transform: translate3d(0, 15vh, 0);
+      will-change: transform;
+    }
   }
 
   &.isLoadedFirst {
@@ -60,12 +62,14 @@
     }
 
     .wrapper-home {
-      transition: transform .3s 12s;
-      transform: translate3d(0, -35vh, 0);
+      @include media-breakpoint-up(md) {
+        transition: transform .3s 12s;
+        transform: translate3d(0, -250px, 0);
+      }
     }
 
     .footer-main {
-      margin-top: -20vh;
+      margin-top: -100px;
     }
 
   }
@@ -86,17 +90,21 @@
     }
 
     header {
-      transform: translate3d(0, 0, 0);
-      transition: transform .4s .2s;
+        transform: translate3d(0, 0, 0);
+        transition: transform .4s .2s;
     }
 
     .wrapper-home {
-      transform: translate3d(0, -35vh, 0);
-      transition: transform .4s .2s;
+      @include media-breakpoint-up(md) {
+        transform: translate3d(0, -250px, 0);
+        transition: transform .4s .2s;
+      }
     }
 
     .footer-main {
-      margin-top: -20vh;
+      @include media-breakpoint-up(md) {
+        margin-top: -100px;
+      }
     }
 
   }

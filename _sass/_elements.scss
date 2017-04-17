@@ -48,7 +48,14 @@ img {
   @include media-breakpoint-up(sm) {
     transform: translateY(-15vh);
   }
+  @media screen and (min-height: 1400px) {
+    transform: translateY(-8vh);
+  }
+  @media screen and (min-height: 1800px) {
+    transform: translateY(-5vh);
+  }
 }
+
 
 .card-img-overlay {
   bottom: auto;
