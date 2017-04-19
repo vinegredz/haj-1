@@ -1,11 +1,17 @@
-<div class="card bg-primary card-inverse f-sans text-center card-oblique">
-    <div class="card-block">
+<div class="card bg-primary card-inverse f-sans text-center card-oblique pt-3">
+    <div class="card-block pb-0">
         <h6 class="text-uppercase text-white f-sans f-bold">Join our mailing list</h6>
         <p class="f-sm">Never miss an update</p>
         <p class="form-group mb-0">
-            <input type="email" class="form-control text-center" aria-describedby="Your email"
+        <form id="subscribe">
+            <input type="email"
+                   class="form-control text-center"
+                   id="subscribe-email"
+                   aria-describedby="Your email"
                    placeholder="Your email">
             <button class="btn btn-outline-secondary btn-block mt-3">Subscribe</button>
+            <label class="subscribe-alert" for="subscribe-email">&nbsp;</label>
+        </form>
         </p>
     </div>
 </div>

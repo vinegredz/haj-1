@@ -56,7 +56,6 @@ img {
   }
 }
 
-
 .card-img-overlay {
   bottom: auto;
 }
@@ -195,6 +194,9 @@ img {
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 
 // Bgs
 .bg-trans {
@@ -257,5 +259,20 @@ blockquote {
       box-shadow: none;
       height: 100%;
     }
+  }
+}
+
+// Subscribe box
+.subscribe-alert {
+  font-size: $font-size-xs;
+  margin-top: .5rem;
+  a {
+    color: $white;
+  }
+  &.error {
+    color: $brand-warning;
+  }
+  &.valid {
+    color: $brand-success;
   }
 }
