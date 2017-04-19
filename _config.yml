@@ -25,12 +25,12 @@ defaults:
   values:
     layout: guide
     thumbnail_image: ''
-description: "<em>Help a Jew. Help the Holy Land</em> is a charitable organization
+description: "<em>Help a Jew&nbsp;&ndash; Help the Holy Land</em> is a charitable organization
   to help those who have been denied their right to return to the Holy Land. Help
   A Jew is a nonprofit corporation that has applied to the IRS for 501(c)(3) tax-exemption."
 baseurl: ''
 url: "//haj.siteleaf.net"
-email: fkolesnik@gmail.com
+email: office@helpajew.com
 linkedin: "//linkedin.com"
 twitter: "//twitter.com"
 facebook: "//facebook.com"

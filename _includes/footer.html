@@ -55,10 +55,18 @@
         </div>
 
         <hr class="jumbotron-hr">
-        <p class="f-xs text-gray-light">&copy; {{site.title}}. All rights reserved</p>
+        <div class="f-xs text-gray-light clearfix">
+            <p class="d-inline-block pr-3">&copy; {{site.title}}. All rights reserved</p>
+            <p class="float-sm-right d-inline-block mt-2 mt-sm-0">
+                <a href="#" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
+            </p>
+        </div>
+
 
     </div>
 </footer>
+
+{% include privacy_policy.html %}
 
 {% if site.url == 'http://localhost:4000' %}
 <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.js"></script>
