@@ -32,7 +32,7 @@ A guard keeps the door locked and escorts people out for bathroom breaks (restro
 
 Applicants are often surprised with more documents needed at their appointment, with the next one months away.
  
-Help a Jew. Help the Holy Land was established to help Jews appeal verbal refusals and to press the Israeli government to increase transparency by issuing written refusals. 
+Help a Jew – Help the Holy Land was established to help Jews appeal verbal refusals and to press the Israeli government to increase transparency by issuing written refusals. 
 [
 Learn more about our programs here](http://haj.siteleaf.net/how-we-help/).
 
