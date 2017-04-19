@@ -73,10 +73,19 @@
 <script src="{{site.url}}{{site.baseurl}}/assets/js/tether.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/assets/js/anime.js"></script>
-<script src="{{site.url}}{{site.baseurl}}/assets/js/xchimp.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/assets/js/app.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/assets/js/salvattore.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/xchimp.js"></script>
 {% else %}
 <script src="{{site.url}}{{site.baseurl}}/assets/js/bundle.js"></script>
 {% endif %}
 
+<script>
+    // Mailchimp
+    $(function () {
+        $('#subscribe').ajaxChimp({
+            language: 'human',
+            url: '//helpajew.us15.list-manage.com/subscribe/post?u=3a5d8a35f1453d1efb472b4ef&amp;id=f50e194a6d'
+        });
+    });
+</script>
