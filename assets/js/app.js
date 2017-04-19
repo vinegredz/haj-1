@@ -94,9 +94,7 @@
 })();
 
 // Mailchimp
-$(function () {
-    $('#subscribe').ajaxChimp({
-        language: 'human',
-        url: '//helpajew.us15.list-manage.com/subscribe/post?u=3a5d8a35f1453d1efb472b4ef&amp;id=f50e194a6d'
-    });
+$('#subscribe').ajaxChimp({
+    language: 'human',
+    url: '//helpajew.us15.list-manage.com/subscribe/post?u=3a5d8a35f1453d1efb472b4ef&amp;id=f50e194a6d'
 });
