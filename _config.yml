@@ -25,9 +25,9 @@ defaults:
   values:
     layout: guide
     thumbnail_image: ''
-description: "Help a Jew – Help the Holy Land is a charitable organization
-  to help those who have been denied their right to return to the Holy Land. Help
-  A Jew is a nonprofit corporation with IRS 501(c)(3) status."
+description: Help a Jew – Help the Holy Land is a charitable organization to help
+  those who have been denied their right to return to the Holy Land. Help A Jew is
+  a nonprofit corporation with IRS 501(c)(3) status.
 baseurl: 
 url: "//helpajew.com"
 email: office@helpajew.com
