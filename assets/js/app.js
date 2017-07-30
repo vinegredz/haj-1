@@ -74,7 +74,7 @@
 // Keep selected tab on page refresh
 (function () {
 
-    var tabsLink = $('#tabs-guide a');
+    var tabsLink = $('#tabs-custom a');
 
     tabsLink.click(function (e) {
         e.preventDefault();
@@ -89,7 +89,7 @@
 
 // on load of the page: switch to the currently selected tab
     var hashLink = window.location.hash;
-    $('#tabs-guide a[href="' + hashLink + '"]').tab('show');
+    $('#tabs-custom a[href="' + hashLink + '"]').tab('show');
 
 })();
 
