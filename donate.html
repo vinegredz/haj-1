@@ -13,28 +13,47 @@ isInNav: false
             <div class="card-header card-oblique bg-primary card-inverse py-5 text-center no-shadow">
 
                 <h1 class="card-title">Donate online now</h1>
-                <p class="card-text">Choose a program and amount bellow</p>
+                <p class="card-text">Choose a program and press the button bellow</p>
             </div>
 
             <div class="card-block card-oblique-reverse card-oblique no-shadow pt-3">
 
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs" id="tabs-custom" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#program-one">Justice Served</a>
+                        <a class="nav-link f-sm active" data-toggle="tab" href="#program-1">Justice Served</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#program-two">Into the Archives</a>
+                        <a class="nav-link f-sm" data-toggle="tab" href="#program-2">Into the Archives</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#program-third">Third Program
+                        <a class="nav-link f-sm" data-toggle="tab" href="#program-3">A Light in the Darkness
                         </a>
                     </li>
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane text-center active" id="program-one" role="tabpanel">
-                        <img class="img-fluid mt-5"
-                             src="{{ 'assets/img/donate-placeholder.png' | relative_url }}">
+                    <div class="tab-pane text-center active" id="program-general" role="tabpanel">
+
+                        <a class="d-block f-xs mt-5" href="{{site.url}}{{site.baseurl}}/how-we-help">Read about the
+                            programs</a>
+
+                        <div class="mt-5">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="XG93CUAPD8T2L">
+                                <input type="image" src="https://helpajew.com/assets/img/donate-button.svg" border="0"
+                                       name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                     width="1" height="1">
+                            </form>
+
+
+                        </div>
+
+                        <div class="mt-5 mb-4 text-gray-light">We accept</div>
+
+                        <img class="mb-5" src="{{site.url}}{{site.baseurl}}/assets/img/payment-options.png">
+
                     </div>
                     <div class="tab-pane" id="program-two" role="tabpanel">
                         <p class="text-gray-light pt-5">Checkout for the second program</p>
@@ -52,13 +71,14 @@ isInNav: false
 
     <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
 
-        <h3 class="text-uppercase f-base f-bold mb-4">Other ways to help</h3>
+        <h3 class="text-uppercase f-base f-bold mb-3">Other ways to help</h3>
 
         <div class="card card-white">
 
             <div class="card-block">
                 <div class="f-bold h2 text-primary">1</div>
-                <h4 class="py-2 text-gray-light f-bold">Personal Checks<br>Money Orders</h4>
+                <h4 class="py-2 text-gray-light f-bold">Personal
+                    Checks<br>Money Orders</h4>
                 <p class="f-sm">Checks or money orders should be made out&nbsp;to: {{site.title}}</p>
                 <p class="f-sm mt-3">Mail checks to:<br> {{site.title}}<br> {{site.address}}</p>
                 <p class="text-gray-light f-sm mt-3">Your receipt will be mailed to the address on the check, unless
@@ -94,14 +114,3 @@ isInNav: false
     </div>
 
 </div>
-
-<!--
-
-<ul class="list">
-    <li>Paypal, credit card, personal check, phone</li>
-    <li>Monthly donation (direct debit)</li>
-    <li>Alternate giving methods (planned gifts)</li>
-    <li>Volunteer (host an event, order marketing materials)</li>
-</ul>
-
--->
