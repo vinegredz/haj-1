@@ -1,17 +1,13 @@
 ---
-title: Something completely  different
-date: 2017-04-01 21:21:00 Z
+title: When Experts Are Needed
+date: 2017-04-01 16:21:00 -05:00
 categories:
 - Know the Law
+thumbnail_image: "/uploads/StockSnap_EKG0C85BFQ.jpg"
 ---
 
-Lorem ipsum dolor sit amet.
+​Israeli consulates do not accept documentation in anything other than its first issuance. This means Jews with lost or destroyed documents can't just request a new copy from the state.
 
-![photo-from-grid.jpg](/uploads/photo-from-grid.jpg)
+To avoid antisemitism, Soviet Jews found ways to remove the word "Jew" from their documents.  This causes them to need more than one generation of records.
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in liffgulaff.ff
-
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.
-
-Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a nulla. Ut a orci. Curabitur dolor nunc, egestas at, accumsan at, malesuada nec, magna.
+Learn more about the required paperwork and how Help a Jew - Help the Holy Land can assist in searching the archives of the FSU!

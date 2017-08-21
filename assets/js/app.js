@@ -6,87 +6,97 @@
 
     body.style.overflow = 'hidden';
 
-    if (document.cookie.indexOf("haj-visited") >= 0) {
+    if (document.cookie.indexOf("haj-visited") !== -1) {
 
         body.classList.add('isLoaded');
         spinner.classList.add('hideSpinner');
         body.style.overflow = '';
 
     }
-    else {
 
-        window.onload = function () {
+    else if (location.pathname === '/') {
+
+        $(function () {
             body.classList.add('isLoadedFirst');
             setTimeout(function () {
                 spinner.classList.add('hideSpinner');
                 body.style.overflow = '';
             }, 12000);
-
-        };
+        });
 
         document.cookie = "haj-visited";
 
     }
 
+    else {
+        body.classList.add('isLoaded');
+        spinner.classList.add('hideSpinner');
+        body.style.overflow = '';
+    }
+
 })();
 
-
-// Skip onload animation
-/*$('.btn-skip').on('click', function (e) {
- e.preventDefault();
- document.cookie = "haj-visited";
-
- location.reload();
-
- });*/
-
-
-// Subscribe card
+// Guide grid
 (function () {
 
-    var cardSubs = $('#card-subscription'),
-        footer = $(".footer-main"),
-        cardSubsClose = cardSubs.find('.card-subscribe-close');
+    function shuffleCards() {
 
-    $(window).scroll(function () {
+        var cardsStr = '',
+            cardsArrayNew = [],
+            itemsToShuffle = document.querySelector('.grid'),
+            cardsArray = itemsToShuffle.querySelectorAll('.grid .grid-item');
 
-        var footerHeight = footer.height(),
-            docHeight = $(document).height(),
-            delta = docHeight - footerHeight,
-            userPos = $(window).scrollTop(),
-            checkPoint = (delta - (userPos + 105));
-
-        if ($(window).height() > 600 && $(window).width() > 767) {
-
-            if (checkPoint < 160) {
-                cardSubs.addClass('isShown');
-            } else {
-                cardSubs.removeClass('isShown');
-            }
-
+        for (var i = 0; i < cardsArray.length; i++) {
+            cardsArrayNew.push(cardsArray[i].outerHTML);
         }
 
-    });
+        cardsArrayNew.sort(function () {
+            return 0.5 - Math.random();
+        });
 
-    cardSubsClose.click(function () {
-        cardSubs.addClass('isRemoved');
-    })
+        cardsStr += cardsArrayNew.join('');
+
+        itemsToShuffle.innerHTML = cardsStr;
+
+    }
+
+    if (location.pathname === '/guide/') {
+        shuffleCards();
+
+        window.addEventListener('resize', function () {
+            salvattore.recreateColumns(document.querySelector('.grid'))
+        })
+    }
 
 
 })();
 
+// Keep selected tab on page refresh
+(function () {
 
-// Tabs
+    var tabsLink = $('#tabs-guide a');
 
-// wire up shown event
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    e.preventDefault();
-    console.log("tab shown...");
+    tabsLink.click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    tabsLink.on("shown.bs.tab", function (e) {
+        var idLink = $(e.target).attr("href").substr(1);
+        window.location.hash = idLink;
+        $(window).scrollTop(0);
+    });
+
+// on load of the page: switch to the currently selected tab
+    var hashLink = window.location.hash;
+    $('#tabs-guide a[href="' + hashLink + '"]').tab('show');
+
+})();
+
+// Mailchimp
+$(function () {
+    $('#subscribe').ajaxChimp({
+        language: 'human',
+        url: '//helpajew.us15.list-manage.com/subscribe/post?u=3a5d8a35f1453d1efb472b4ef&amp;id=f50e194a6d'
+    });
 });
-
-// read hash from page load and change tab
-var hash = document.location.hash;
-var prefix = "tab_";
-if (hash) {
-    $('.nav-tabs a[href="'+hash.replace(prefix,"")+'"]').tab('show');
-}

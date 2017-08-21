@@ -1,7 +1,7 @@
 <footer class="footer footer-main py-5 f-sans">
     <div class="container">
 
-        <h3 class="text-uppercase f-med f-ls-minus" id="contact">Get in touch</h3>
+        <h3 class="text-uppercase f-med f-ls-minus" id="contact">Contact us</h3>
         <hr class="jumbotron-hr">
 
         <div class="row py-5">
@@ -25,7 +25,6 @@
                 <ul class="list-unstyled mt-5 mt-md-0">
                     <li class="text-gray-light">{{site.description}}</li>
                     <li class="pt-4">{{site.address}}</li>
-                    <li class="pt-3">{{site.phone}}</li>
                     <li class="pt-4">
                         <a href="{{site.facebook}}" class="pr-3"><span class="icon-social facebook-active"></span></a>
                         <a href="{{site.twitter}}" class="pr-3"><span class="icon-social twitter-active"></span></a>
@@ -37,13 +36,13 @@
             <div class="col-md-6">
                 <ul class="list-unstyled mt-0">
                     <li class="text-gray-light">{{site.description}}</li>
-                    <li class="pt-3 f-lg"><a href="{{site.url}}/#contact">Write us a letter</a></li>
+                    <li class="pt-3 f-lg"><a href="{{site.url}}/#contact">Write to us</a></li>
                 </ul>
             </div>
             <div class="col-md-5 offset-md-1">
                 <ul class="list-unstyled mt-5 mt-md-0">
                     <li>{{site.address}}</li>
-                    <li class="pt-3">{{site.phone}}</li>
+                    <li class="pt-3"><a href="mailto:{{site.email}}">{{site.email}}</a></li>
                     <li class="pt-4">
                         <a href="{{site.facebook}}" class="pr-3"><span class="icon-social facebook-active"></span></a>
                         <a href="{{site.twitter}}" class="pr-3"><span class="icon-social twitter-active"></span></a>
@@ -56,14 +55,27 @@
         </div>
 
         <hr class="jumbotron-hr">
-        <p class="f-xs text-gray-light">&copy; {{site.title}}. All rights reserved</p>
+        <div class="f-xs text-gray-light clearfix">
+            <p class="d-inline-block pr-3">&copy; {{site.title}}. All rights reserved</p>
+            <p class="float-sm-right d-inline-block mt-2 mt-sm-0">
+                <a href="#" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>
+            </p>
+        </div>
 
 
     </div>
 </footer>
 
+{% include privacy_policy.html %}
 
-<script src="{{ 'assets/js/jquery.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/tether.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/app.js' | relative_url }}"></script>
+{% if site.url == 'http://localhost:4000' %}
+<script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/tether.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/anime.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/app.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/salvattore.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/xchimp.js"></script>
+{% else %}
+<script src="{{site.url}}{{site.baseurl}}/assets/js/bundle.js"></script>
+{% endif %}

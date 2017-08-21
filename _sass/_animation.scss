@@ -23,8 +23,10 @@
   }
 
   .wrapper-home {
-    transform: translate3d(0, 15vh, 0);
-    will-change: transform;
+    @include media-breakpoint-up(md) {
+      transform: translate3d(0, 15vh, 0);
+      will-change: transform;
+    }
   }
 
   &.isLoadedFirst {
@@ -36,21 +38,21 @@
 
     .jumbotron .jumbotron-overlay {
       background-color: rgba($blue, .9);
-      transition: background-color 7s 3s;
+      transition: background-color 2s 10s;
     }
 
     .a-1 {
-      transition: opacity 1s 5s;
+      transition: opacity 1s 3s;
       opacity: 1;
     }
 
     .a-2 {
-      transition: opacity 1s 7s;
+      transition: opacity 1s 6s;
       opacity: 1;
     }
 
     .a-3 {
-      transition: opacity 1s 10s;
+      transition: opacity 1s 9s;
       opacity: 1;
     }
 
@@ -60,8 +62,14 @@
     }
 
     .wrapper-home {
-      transition: transform .3s 12s;
-      transform: translate3d(0, -10vh, 0);
+      @include media-breakpoint-up(md) {
+        transition: transform .3s 12s;
+        transform: translate3d(0, -250px, 0);
+      }
+    }
+
+    .footer-main {
+      margin-top: -100px;
     }
 
   }
@@ -82,13 +90,21 @@
     }
 
     header {
-      transform: translate3d(0, 0, 0);
-      transition: transform .4s .2s;
+        transform: translate3d(0, 0, 0);
+        transition: transform .4s .2s;
     }
 
     .wrapper-home {
-      transform: translate3d(0, -10vh, 0);
-      transition: transform .4s .2s;
+      @include media-breakpoint-up(md) {
+        transform: translate3d(0, -250px, 0);
+        transition: transform .4s .2s;
+      }
+    }
+
+    .footer-main {
+      @include media-breakpoint-up(md) {
+        margin-top: -100px;
+      }
     }
 
   }

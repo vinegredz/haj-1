@@ -9,47 +9,38 @@ isInNav: true
 {% assign tab_third = site.guide | where: 'categories', 'Prophecies and Facts' %}
 
 <nav class="nav nav-pills flex-column flex-sm-row mb-4 f-sans" id="tabs-guide" role="tablist">
-    <a class="flex-sm-fill text-sm-center nav-link active" data-toggle="tab" href="#tab-first" role="tab">All</a>
-    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#tab-second" role="tab">Know the Law</a>
-    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#tab-third" role="tab">Prophecies and
-        Facts</a>
+    <a class="flex-sm-fill text-sm-center nav-link active" data-toggle="tab" href="#all" role="tab">All</a>
+    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#know-the-law" role="tab">Know the Law</a>
+    <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#prophecies-and-facts" role="tab">Prophecies
+        and Facts</a>
 </nav>
 
 <div class="tab-content">
 
-    <div class="tab-pane active" id="tab-first" role="tabpanel">
+    <div class="tab-pane active" id="all" role="tabpanel">
 
-        <div class="card-columns">
+        <div class="grid" data-columns>
 
-            <div class="card card-inverse bg-primary p-4 text-center card-white">
-                <img class="img-quote" src="{{ 'assets/img/menora.svg' | relative_url }}">
+            <div class="card card-inverse bg-primary p-4 text-center card-white grid-item">
+                <img class="img-quote" width="59" height="70" src="{{ 'assets/img/menora.svg' | relative_url }}">
                 <p class="lead text-white py-3">“Essentially, all Jews everywhere are Israeli citizens by right”</p>
                 <div class="f-xs f-sans">Israeli Parliament, 1950</div>
             </div>
 
             {% for guide in site.guide %}
 
-            <div class="card">
-
+            <div class="card grid-item">
                 {% unless guide.thumbnail_image == empty %}
                 <a href="{{ guide.url | relative_url }}">
-                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
+                    <img class="card-img-top" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
                 </a>
                 {% endunless %}
                 <div class="card-block">
-
                     <a href="{{ guide.url | relative_url }}">
                         <h4 class="card-title">{{ guide.title }}</h4>
                     </a>
-
-                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
-
-                    <!--{% unless guide.categories == empty %}
-                    <p><a class="f-sm text-gray-light f-sans" href="#">{{ guide.categories }}</a></p>
-                    {% endunless %}-->
-
+                    <p class="card-text">{{ guide.excerpt | strip_html }}</p>
                 </div>
-
             </div>
 
             {% endfor %}
@@ -58,17 +49,18 @@ isInNav: true
 
     </div>
 
-    <div class="tab-pane" id="tab-second" role="tabpanel">
+    <div class="tab-pane" id="know-the-law" role="tabpanel">
 
-        <div class="card-columns">
+        <div class="grid" data-columns>
 
-            {%for guide in tab_second%}
+            {% for guide in tab_second %}
 
-            <div class="card">
+            <div class="card grid-item">
 
                 {% unless guide.thumbnail_image == empty %}
                 <a href="{{ guide.url | relative_url }}">
-                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
+                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
+                         alt="Image">
                 </a>
                 {% endunless %}
 
@@ -78,11 +70,20 @@ isInNav: true
                         <h4 class="card-title">{{ guide.title }}</h4>
                     </a>
 
-                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
+                    <p class="card-text">{{ guide.excerpt | strip_html }}</p>
 
                 </div>
 
             </div>
+
+            {% if forloop.index == 2 %}
+            <div class="card card-inverse bg-primary p-4 text-center card-white grid-item">
+                <img class="img-quote" width="59" height="70" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                <p class="lead text-white py-3">“An oleh's visa shall be granted to every Jew who has expressed his
+                    desire to settle in Israel”</p>
+                <div class="f-xs f-sans">The Law of Return, 1950, Israel</div>
+            </div>
+            {% endif%}
 
             {% endfor %}
 
@@ -90,31 +91,36 @@ isInNav: true
 
     </div>
 
-    <div class="tab-pane" id="tab-third" role="tabpanel">
+    <div class="tab-pane" id="prophecies-and-facts" role="tabpanel">
 
-        <div class="card-columns">
+        <div class="grid" data-columns>
 
-            {%for guide in tab_third%}
+            {% for guide in tab_third %}
 
-            <div class="card">
-
+            <div class="card grid-item">
                 {% unless guide.thumbnail_image == empty %}
                 <a href="{{ guide.url | relative_url }}">
-                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}" alt="Image">
+                    <img class="card-img-top img-fluid" src="{{ guide.thumbnail_image | relative_url }}"
+                         alt="Image">
                 </a>
                 {% endunless %}
-
                 <div class="card-block">
-
                     <a href="{{ guide.url | relative_url }}">
                         <h4 class="card-title">{{ guide.title }}</h4>
                     </a>
-
-                    <p class="card-text">{{ guide.excerpt | truncatewords: 15 | strip_html }}</p>
-
+                    <p class="card-text">{{ guide.excerpt | strip_html }}</p>
                 </div>
-
             </div>
+
+            {% if forloop.index == 2 %}
+            <div class="card card-inverse bg-primary p-4 text-center card-white grid-item">
+                <img class="img-quote" width="59" height="70" src="{{ 'assets/img/menora.svg' | relative_url }}">
+                <p class="lead text-white py-3">“I will bring them out from the nations and gather them from the
+                    countries, and I will bring them into their own land. I will pasture them on the mountains of
+                    Israel, in the ravines and in all the settlements in the land”</p>
+                <div class="f-xs f-sans">Ezekiel, 34:13 NIV</div>
+            </div>
+            {% endif%}
 
             {% endfor %}
 
