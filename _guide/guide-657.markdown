@@ -1,6 +1,6 @@
 ---
 title: Guide №657
-date: 2017-04-01 23:09:00 Z
+date: 2017-04-01 18:09:00 -05:00
 thumbnail_image: "/uploads/anton-mislawsky-160225.jpg"
 ---
 

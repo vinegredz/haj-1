@@ -1,6 +1,6 @@
 ---
 title: Guide №9
-date: 2017-04-01 23:09:00 Z
+date: 2017-04-01 18:09:00 -05:00
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. 

@@ -28,7 +28,7 @@ defaults:
 description: Help a Jew – Help the Holy Land is a charitable organization to help
   those who have been denied their right to return to the Holy Land. Help A Jew is
   a nonprofit corporation with IRS 501(c)(3) status.
-baseurl:
+baseurl: 
 url: "//helpajew.com"
 email: office@helpajew.com
 linkedin: "//linkedin.com"

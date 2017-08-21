@@ -1,6 +1,6 @@
 ---
 title: Law of Return
-date: 2017-04-01 17:45:00 Z
+date: 2017-04-01 12:45:00 -05:00
 categories:
 - Know the Law
 thumbnail_image: "/uploads/stock-photo-199416697.jpg"

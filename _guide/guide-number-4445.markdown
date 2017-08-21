@@ -1,6 +1,6 @@
 ---
 title: 'Guide #4445'
-date: 2017-04-01 23:22:00 Z
+date: 2017-04-01 18:22:00 -05:00
 categories:
 - Prophecies and Facts
 thumbnail_image: "/uploads/photo-from-grid.jpg"
